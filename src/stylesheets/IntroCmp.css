@@ -1,0 +1,29 @@
+.IntroCmp-Wrpr {
+    height: 75vh;
+}
+
+.IntroCmp {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.Anim_Cntnr {
+    aspect-ratio: 1/1;
+}
+
+.p_style {
+    color : #fff;
+    font-family: 'Zeyada';
+    font-weight: bold;
+    font-size: calc(20px + 1vmin);
+}
+
+.IntroCmp-Wrpr h2 {
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    color: var(--SecClr);
+}
