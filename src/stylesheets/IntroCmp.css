@@ -1,17 +1,21 @@
 .IntroCmp-Wrpr {
-    height: 75vh;
+    height: fit-content;
+    width: 100%;
+    
 }
 
 .IntroCmp {
     display: flex;
-    flex-direction: column-reverse;
-    height: 100%;
+    padding: 5px;
+    flex-direction: column;
+    height: fit-content;
     align-items: center;
     justify-content: space-around;
 
 }
 
 .Anim_Cntnr {
+    z-index: 2;
     aspect-ratio: 1/1;
 }
 

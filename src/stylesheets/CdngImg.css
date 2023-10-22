@@ -1,24 +1,95 @@
-
-.CdngImg_Wrpr {
-    height: fit-content;
+.stacked-divs {
+    position: relative;
     width: 100%;
-}
-
-.CdngImg {
-    perspective: 1000px;
-    transform: translateY(-112px);
+    height: fit-content;
+    transform: translateY(-80px);
+    
+  }
+  
+  .div1, .div2, .div3 {
+    position: absolute;
+    margin: 0 6%;
+    width: 87%;
+    aspect-ratio: 1/0.8;
     border-radius: 1em;
-    box-shadow: 25px 30px 10px 0px rgba(0, 0, 0, 0.5);
-    /* x-offset, y-offset, blur radius, spread radius, shadow color */
+   
+  }
+
+  .div1 {
+    z-index: 1;
+  }
+
+  .Img_CDim {
+    width: 100%;
+    height: 100%;
+  }
+
+  .div2 {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background :-moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  }
+
+  .div2_lft {
+    overflow: hidden;
+    width: fit-content;
+    height: 100%;
+    writing-mode:vertical-lr; 
+    padding: 2vmin;
+  }
+
+  .div2_lft h3 {
+    color: #fff;
+    font-size: 15vmin;
+    font-family: 'Zeyada';
+    padding: 2vmin;
+    border: 6px solid #fff;
+    border-radius: 50%;
     width: fit-content;
     height: fit-content;
     margin: auto;
-    overflow: hidden;
-    height: fit-content;
-}
+  }
 
-.cd_or_img {
-    width: 75vw;
-    height: 90vh;
-}
+  .div2_rgt {
+    width: fit-content;
+    font-family: var(--SecFnt);
+    padding: 2vmin;
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+  }
 
+  .div2_rgt ul {
+    padding: 2vmin;
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+  }
+
+  .div2_rgt li {
+    padding: 2vmin;
+    border-style: solid;
+   
+  }
+  
+  .div3 {
+    z-index: 3;
+    background :-moz-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
+	background: -webkit-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
+    background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+
+
+  .div1 {
+    top : 0px;
+  }
+  
+  .div2 {
+    top: 50px;
+  }
+  
+  .div3 {
+    top: 100px;
+  }

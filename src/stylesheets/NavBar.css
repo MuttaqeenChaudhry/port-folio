@@ -44,5 +44,8 @@
     font-size: calc(12px + 1vmin);
     font-weight: bold;
     font-family: Zeyada;
-   
+}
+
+.Nav-Right a:hover {
+    color: #fff;
 }
