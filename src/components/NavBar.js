@@ -7,6 +7,7 @@ export default function NavBar() {
     <>
       <header>
         <nav>
+        <div className='B_Grad'></div>
         <div className="Nav-Wrapper">
           <div className="Nav-Bar">
             <div className="Nav-Left">

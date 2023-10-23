@@ -1,0 +1,12 @@
+.Footer_Wrpr {
+    width: 100%;
+    height: 20vh;
+    left: 0;
+    background-color: black;
+    color: #fff; 
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-around;
+}

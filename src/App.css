@@ -21,6 +21,10 @@
   
 }
 
+.B_Grad {
+  height: 1vh;
+    background: linear-gradient(139deg, #282c34, rgba(26, 188, 156, 1), #e02aff, #61dafb, #282c34);
+}
 .float_anim {
   animation : float 6s ease-in-out infinite;
 }

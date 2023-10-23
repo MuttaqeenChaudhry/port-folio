@@ -1,15 +1,16 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import IntroCmp from './components/IntroCmp';
-import CdngImg from './components/CdngImg';
-import Skills from './components/Skills';
+import StakHse from './components/StakHse';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
     <NavBar/>
     <IntroCmp/>
-    <CdngImg/>
+    <StakHse/>
+    <Footer/>
     </>
   );
 }

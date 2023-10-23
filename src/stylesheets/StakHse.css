@@ -1,8 +1,12 @@
+.Stacked_Wrpr {
+  width: 100%;
+  height: 1450px;
+}
+
 .stacked-divs {
     position: relative;
     width: 100%;
     height: fit-content;
-    transform: translateY(-80px);
     
   }
   
@@ -10,25 +14,28 @@
     position: absolute;
     margin: 0 6%;
     width: 87%;
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/fit-content;
     border-radius: 1em;
    
   }
 
   .div1 {
-    z-index: 1;
+    z-index: 3;
+    border: 1px solid #fff;
+    background-color: var(--PrmClr);
   }
 
   .Img_CDim {
     width: 100%;
-    height: 100%;
+    height: 70vmin;
   }
 
   .div2 {
+    border: 2px solid #fff;
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background :-moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
@@ -37,9 +44,9 @@
   .div2_lft {
     overflow: hidden;
     width: fit-content;
-    height: 100%;
+    height: fit-content;
     writing-mode:vertical-lr; 
-    padding: 2vmin;
+    padding: 6vmin 2vmin 2vmin 2vmin;
   }
 
   .div2_lft h3 {
@@ -75,7 +82,8 @@
   }
   
   .div3 {
-    z-index: 3;
+    border: 3px solid #fff;
+    z-index: 1;
     background :-moz-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
 	background: -webkit-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
     background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -88,8 +96,12 @@
   
   .div2 {
     top: 8vmin;
+    margin: 0 5%;
+    width: 89%;
   }
   
   .div3 {
     top: 16vmin;
+    width: 91%;
+    margin : 0 4%;
   }
