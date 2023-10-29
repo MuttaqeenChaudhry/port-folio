@@ -1,12 +1,30 @@
 .Footer_Wrpr {
     width: 100%;
-    height: 20vh;
-    left: 0;
-    background-color: black;
+    height: fit-content;
+    left: 0;  
     color: #fff; 
 }
 
+.HTne_Wrpr {
+    width: 100%;
+    height: fit-content;
+}
+
+.HTne {
+    filter: contrast(50);
+    --dotsize : 0.25rem;
+    --bgSize : 1.35rem;
+    --bgPosition : 0.65rem;
+    height: 8.5vh;
+    background: radial-gradient(circle at center, black var(--dotsize), transparent 0);
+    background-size: var(--bgSize) var(--bgSize);
+    background-repeat: round;
+    background-position: 0 0, var(--bgPosition) var(--bgPosition);    
+}
+
 .Footer {
+    background-color: black;
     display: flex;
     justify-content: space-around;
 }
+

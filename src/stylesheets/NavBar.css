@@ -2,7 +2,20 @@
     height: 8vmin;
     z-index: 100;
     width: 100%;
-  
+
+}
+
+.anim_d_down {
+    transform: translateY(-80px);
+    animation: slideOutUp;
+    animation-duration: 1.5s;
+}
+
+
+.mt-2 {
+    position: relative;
+    margin-top: 0px;
+    z-index: 3000;
 }
 
 .Nav-Bar {

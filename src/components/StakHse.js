@@ -1,7 +1,10 @@
 import React from "react";
 import "../stylesheets/StakHse.css";
 import cdimg from "../images/Coding.jpg";
-import { useEffect } from "react";
+import 'animate.css';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default function CdngImg() {
   let scrollTimeout;
@@ -45,6 +48,8 @@ export default function CdngImg() {
 
  }
 
+
+
  
   
   
@@ -62,11 +67,21 @@ export default function CdngImg() {
           <div className="div2_rgt">
             <h3>I Work with,</h3>
             <ul className="Sklls_bfr">
+              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
               <li className="Sklls_bfr">MongoDB</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={500}>
               <li className="Sklls_bfr">Express.js</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={1000}>
               <li className="Sklls_bfr">React</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={1500}>
               <li className="Sklls_bfr">Node.js</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={2000}>
               <li className="Sklls_bfr">Full Stack Web Dev</li>
+              </ScrollAnimation>
             </ul>
             </div>
         </div>
