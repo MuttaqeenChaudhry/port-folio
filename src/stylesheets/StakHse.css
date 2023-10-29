@@ -35,7 +35,7 @@
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background :-moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
@@ -45,28 +45,26 @@
     overflow: hidden;
     width: fit-content;
     height: fit-content;
-    writing-mode:vertical-lr; 
+
     padding: 6vmin 2vmin 2vmin 2vmin;
   }
 
-  .div2_lft h3 {
+  .div2_lft img {
     color: #fff;
-    font-size: 15vmin;
-    font-family: 'Zeyada';
-    padding: 2vmin;
-    border: 6px solid #fff;
+   animation-name: float;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
     border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
+    width: 120px;
+    height: 120px;
   }
 
   .div2_rgt {
     width: fit-content;
     font-family: var(--SecFnt);
     padding: 2vmin;
-    border-style: solid;
-    border-width: 0px 0px 0px 3px;
+ 
+   
   }
 
   .div2_rgt ul {
@@ -76,16 +74,14 @@
   }
 
   .div2_rgt li {
-    padding: 2vmin;
-    border-style: solid;
-   
+    padding: 2vmin; 
   }
   
   .div3 {
     border: 2px solid #fff;
     z-index: 1;
     background :-moz-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
-	background: -webkit-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
+	  background: -webkit-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
     background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   }
 

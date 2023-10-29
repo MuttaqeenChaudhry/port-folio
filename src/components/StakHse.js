@@ -4,9 +4,17 @@ import cdimg from "../images/Coding.jpg";
 import 'animate.css';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faM,faE,faR,faN } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function CdngImg() {
+  
+const LG_M = <FontAwesomeIcon icon={faM} color="#89CFF0" />
+const LG_E = <FontAwesomeIcon icon={faE} color="#191970"/>
+const LG_R = <FontAwesomeIcon icon={faR} color="#89CFF0"/>
+const LG_N = <FontAwesomeIcon icon={faN} color="#191970"/>
   let scrollTimeout;
   if(window.innerWidth >= 1200)
   {
@@ -21,7 +29,7 @@ export default function CdngImg() {
     if(window.scrollY>0)
     {
       M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 550px))`
-      M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 962px))`
+      M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 880px))`
     }    
     }, 5);  
   })
@@ -62,25 +70,22 @@ export default function CdngImg() {
         </div>
         <div id="M_div2" className="div2">
           <div className="div2_lft">
-            <h3 className="float_anim" >SKILLS</h3>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/skytsunami.png" alt="Muttaqeen"/>
             </div>
           <div className="div2_rgt">
             <h3>I Work with,</h3>
-            <ul className="Sklls_bfr">
+            <ul>
               <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-              <li className="Sklls_bfr">MongoDB</li>
+              <li className="Sklls_bfr">{LG_M} MongoDB</li>
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={500}>
-              <li className="Sklls_bfr">Express.js</li>
+              <li className="Sklls_bfr">{LG_E} Express.js</li>
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={1000}>
-              <li className="Sklls_bfr">React</li>
+              <li className="Sklls_bfr">{LG_R} React.js</li>
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={1500}>
-              <li className="Sklls_bfr">Node.js</li>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} delay={2000}>
-              <li className="Sklls_bfr">Full Stack Web Dev</li>
+              <li className="Sklls_bfr">{LG_N} Node.js</li>
               </ScrollAnimation>
             </ul>
             </div>

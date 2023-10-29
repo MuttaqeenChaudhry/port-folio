@@ -11,11 +11,11 @@ export default function IntroCmp() {
     lottie.loadAnimation({
       container : Anim_Cntnr.current,
       animationData : KbrdAnim,
-      loop : true,
+      loop: 1,   
     })
   },[]);
 
-  const strings = ["Muttaqeen", "a Web App Devloper", "a MERN stack developer"]
+  const strings = ["Muttaqeen", "a Full Stack Web Dev"]
   return (
     <>
       <div className="IntroCmp-Wrpr">
@@ -25,7 +25,7 @@ export default function IntroCmp() {
             <p className="p_style">Hi I am</p>
             </div>
             <div>
-            <h2><Typed strings={strings} typeSpeed={60} loop={true} /></h2>
+            <h2><Typed strings={strings} typeSpeed={60} loop={false} /></h2>
             </div>
             <div ref={Anim_Cntnr} className="Anim_Cntnr"/>  
           
