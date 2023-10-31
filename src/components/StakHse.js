@@ -7,6 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faM,faE,faR,faN } from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from "react";
 
 
 export default function CdngImg() {
@@ -15,6 +16,7 @@ const LG_M = <FontAwesomeIcon icon={faM} color="#89CFF0" />
 const LG_E = <FontAwesomeIcon icon={faE} color="#191970"/>
 const LG_R = <FontAwesomeIcon icon={faR} color="#89CFF0"/>
 const LG_N = <FontAwesomeIcon icon={faN} color="#191970"/>
+useEffect(()=>{
   let scrollTimeout;
   if(window.innerWidth >= 1200)
   {
@@ -56,6 +58,8 @@ const LG_N = <FontAwesomeIcon icon={faN} color="#191970"/>
 
  }
 
+},[])
+  
 
 
  

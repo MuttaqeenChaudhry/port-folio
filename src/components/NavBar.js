@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../stylesheets/NavBar.css";
 import webdev from '../svgs/web_dev.svg'
 import 'animate.css';
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   
@@ -33,12 +34,12 @@ export default function NavBar() {
                 <img src={webdev} alt="Dev." />
             </div>
             <div className="Nav-Right">
-              <a href="" rel="noreferrer noopener">
+              <Link href="" rel="noreferrer noopener" to='/'>
                 Home
-              </a>
-              <a href="" rel="noreferrer noopener">
+              </Link>
+              <Link href="" rel="noreferrer noopener" to='/Services'>
                 Projects
-              </a>
+              </Link>
               <a href="" rel="noreferrer noopener">
                 About
               </a>

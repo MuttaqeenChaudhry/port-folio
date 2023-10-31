@@ -4,6 +4,7 @@ import "../stylesheets/Footer.css";
 export default function Footer() {
   return (
     <>
+    <footer>
     <div className="Footer_Wrpr">
     <div className="HTne_Wrpr">
         <div className="HTne"/>
@@ -39,8 +40,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className="B_Grad" /> 
       </div>
-      <div className="B_Grad" />      
+      </footer>
     </>
   );
 }
