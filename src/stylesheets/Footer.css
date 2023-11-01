@@ -1,8 +1,8 @@
 .Footer_Wrpr {
     width: 100%;
-    height: fit-content;
-    margin-bottom: 0px;
-    color: #fff;    
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0px;   
 }
 
 .HTne_Wrpr {
@@ -23,6 +23,7 @@
 }
 
 .Footer {
+    color: #fff;
     background-color: black;
     display: flex;
     justify-content: space-around;

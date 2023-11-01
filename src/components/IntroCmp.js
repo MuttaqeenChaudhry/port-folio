@@ -3,6 +3,7 @@ import "../stylesheets/IntroCmp.css";
 import KbrdAnim from '../animations/NC2QHYnXLQ.json'
 import lottie from "lottie-web";
 import Typed from 'react-typed';
+import SpcShip from '../svgs/abc.gif';
 
 export default function IntroCmp() {
   let Anim_Cntnr = React.createRef();
@@ -19,8 +20,10 @@ export default function IntroCmp() {
   return (
     <>
       <div className="IntroCmp-Wrpr">
+        <span style={{marginLeft:'80px'}}>
+      <img src={SpcShip} alt="" width="50px" height="50px"/>
+      </span>
         <div className="IntroCmp">
-           
           <div>
             <p className="p_style">Hi I am</p>
             </div>

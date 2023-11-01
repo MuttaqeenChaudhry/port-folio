@@ -21,6 +21,50 @@
   
 }
 
+@keyframes fade {
+  0% {
+    opacity: 1 ;
+    box-shadow: 1px 1px 5px 3px grey;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1 ;
+    box-shadow: 1px 1px 5px 3px grey;
+    
+  }
+  
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 1 ;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1 ;
+    
+  }
+  
+}
+
+
+
+@keyframes moveltr {
+  0% {
+    left: -10px; /* Start from outside the left edge of the screen */
+  }
+  100% {
+    left: 100vw; /* Move to the right edge of the screen */
+  }
+}
+
+.c-prim {
+  color : #61dafb;
+}
 .B_Grad {
   height: 1vh;
     background: linear-gradient(139deg, #282c34, rgba(26, 188, 156, 1), #e02aff, #61dafb, #282c34);

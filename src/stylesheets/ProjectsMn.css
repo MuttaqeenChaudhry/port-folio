@@ -1,4 +1,23 @@
 .Project_Wrpr {
+    width: 100%;
     height: 100vh;
-    background-color: black;
+    overflow: hidden;
+    
+}
+
+.PW_S1 {
+    overflow: hidden;
+    background-color: #131312;
+    aspect-ratio: 1/0.3
+}
+
+.PW-Content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 48px;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
