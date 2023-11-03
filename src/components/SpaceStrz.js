@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../stylesheets/SpaceStrz.css";
 import SpcShip from '../svgs/abc.gif'
 
-export default function SpaceStrz(props) {
+export default function SpaceStrz({InformCaptain}, props) {
   useEffect(() => {
     const container = document.getElementById("stars-container");
     function createRandomStar() {
@@ -22,26 +22,40 @@ export default function SpaceStrz(props) {
     function createRandomSpaceship () {
         const spaceship = document.createElement('img');
         spaceship.setAttribute('src', SpcShip);
-        spaceship.setAttribute('alt', 'Error')
+        spaceship.setAttribute('alt', 'Error');
         spaceship.classList.add('S51');
         const x = Math.random() * window.innerWidth;
         const y = Math.random() * window.innerHeight;
         spaceship.style.left = x + "px";
         spaceship.style.top = y + "px";
         container.appendChild(spaceship);
-        spaceship.addEventListener('animationend', ()=>{
+        
+        spaceship.addEventListener('click', ()=>{
+          InformCaptain();
+          container.removeChild(spaceship);
+          createRandomSpaceship()
+          })
+
+          spaceship.addEventListener('touchstart', ()=>{
+            InformCaptain();
             container.removeChild(spaceship);
-            createRandomSpaceship();
-        })
+            createRandomSpaceship()
+            })
+        spaceship.addEventListener("animationend", () => {
+          container.removeChild(spaceship);
+          createRandomSpaceship()
+        });
+       
+           
 
     }
     function createRandomSpaceships() {
-        for (let i = 0; i < 1; i++) createRandomSpaceship();
+        for (let i = 0; i < 3; i++) createRandomSpaceship();
     }
     createRandomSpaceships()
 
     function createRandomStars(number) {
-      for (let i = 0; i < number; i++) createRandomStar();
+      for (let i = 0; i < 10; i++) createRandomStar();
     }
 
     createRandomStars(props.numberofstars);
