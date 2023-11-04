@@ -1,8 +1,29 @@
+
+.SS_Wrpr {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    height: 65vh;
+}
+
+.SS_Content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vmin;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+
 .stars-container {
     overflow: hidden;
     position: relative;
-    aspect-ratio: 1/0.3;
-    transform: translateY(-448px);
+    aspect-ratio: 1/1;
+    transform: translateY(-0px);
   
 }
 
@@ -12,26 +33,35 @@
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    animation: fade 6s infinite alternate;
+    animation-name: fade;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    
 }
 
 .S51 {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     position: absolute;
-    animation: fade2 10s infinite alternate, moveltr 5s linear infinite;
+    animation: fade2 10s alternate, moveltr 5s linear;
 
 
 }
 
-@media (max-width : 1200px) {
-    .stars-container {
-        overflow: hidden;
-        position: relative;
-        height: 40vh;
-        transform: translateY(-310px);
-      
-    }
-    
+.Fnt_Uu {   
+    font-family: Ubuntu;
 }
+
+.txtStroke {    
+    -webkit-text-stroke-color: var(--SecClr);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadwToogle {
+    animation-name: shadowToggle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } 

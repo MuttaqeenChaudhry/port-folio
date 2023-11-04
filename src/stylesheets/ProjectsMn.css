@@ -4,34 +4,3 @@
     overflow: hidden;
     
 }
-
-.PW_S1 {
-    overflow: hidden;
-    background-color: #131312;
-    height: 40vh;
-}
-
-.PW_S1_b {
-    color: #fff;
-    padding: 20px;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 1px 1px 1px 1px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    background-color: #131312;
-    width: fit-content;
-    height: 100%;
-    margin: auto;
-}
-
-.PW-Content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 48px;
-    font-family: Ubuntu;
-    text-transform: uppercase;
-}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../stylesheets/SpaceStrz.css";
-import SpcShip from '../svgs/abc.gif'
+import SpcShip from "../svgs/abc.gif";
 
-export default function SpaceStrz({InformCaptain}, props) {
+export default function SpaceStrz(props) {
   useEffect(() => {
     const container = document.getElementById("stars-container");
     function createRandomStar() {
@@ -15,54 +15,54 @@ export default function SpaceStrz({InformCaptain}, props) {
       container.appendChild(star);
       star.addEventListener("animationend", () => {
         container.removeChild(star);
-        createRandomStar()
+        createRandomStar();
       });
     }
 
-    function createRandomSpaceship () {
-        const spaceship = document.createElement('img');
-        spaceship.setAttribute('src', SpcShip);
-        spaceship.setAttribute('alt', 'Error');
-        spaceship.classList.add('S51');
-        const x = Math.random() * window.innerWidth;
-        const y = Math.random() * window.innerHeight;
-        spaceship.style.left = x + "px";
-        spaceship.style.top = y + "px";
-        container.appendChild(spaceship);
-        
-        spaceship.addEventListener('click', ()=>{
-          InformCaptain();
-          container.removeChild(spaceship);
-          createRandomSpaceship()
-          })
-
-          spaceship.addEventListener('touchstart', ()=>{
-            InformCaptain();
-            container.removeChild(spaceship);
-            createRandomSpaceship()
-            })
-        spaceship.addEventListener("animationend", () => {
-          container.removeChild(spaceship);
-          createRandomSpaceship()
-        });
-       
-           
-
+    function createRandomChicken() {
+      const container = document.getElementById("stars-container");
+      const chicken = document.createElement("img");
+      chicken.setAttribute("src", SpcShip);
+      chicken.setAttribute("alt", "-_-");
+      chicken.classList.add("S51");
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      chicken.style.left = x + "px";
+      chicken.style.top = y + "px";
+      container.appendChild(chicken);
+      chicken.addEventListener("animationend", () => {
+        container.removeChild(chicken);
+        createRandomChicken();
+      });
     }
-    function createRandomSpaceships() {
-        for (let i = 0; i < 3; i++) createRandomSpaceship();
+    function createRandomChickens() {
+      for (let i = 0; i < 2; i++) createRandomChicken();
     }
-    createRandomSpaceships()
+
+    createRandomChickens();
 
     function createRandomStars(number) {
-      for (let i = 0; i < 10; i++) createRandomStar();
+      for (let i = 0; i < number; i++) createRandomStar();
     }
 
     createRandomStars(props.numberofstars);
   }, []);
   return (
     <>
-      <div className="stars-container" id="stars-container"></div>
+      <div className="SS_Wrpr">
+        <div className="SS_Content">
+          <h2 style={{ zIndex: "2" }}>
+            <span className="Fnt_Uu" style={{ color: "white" }}>
+              {props.Prim}
+            </span>{" "}
+            <span className="txtStroke">
+    <span className="shadwToogle">{props.Sec}</span>
+  </span> 
+          </h2>
+        </div>
+        <div className="stars-container" id="stars-container">
+        </div>
+      </div>
     </>
   );
 }

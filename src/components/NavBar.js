@@ -34,18 +34,18 @@ export default function NavBar() {
                 <img src={webdev} alt="Dev." />
             </div>
             <div className="Nav-Right">
-              <Link href="" rel="noreferrer noopener" to='/'>
+              <Link rel="noreferrer noopener" to='/'>
                 Home
               </Link>
-              <Link href="" rel="noreferrer noopener" to='/Services'>
+              <Link rel="noreferrer noopener" to='/Projects'>
                 Projects
               </Link>
-              <a href="" rel="noreferrer noopener">
+              <Link rel="noreferrer noopener" to='/AboutMe'>
                 About
-              </a>
-              <a href="" rel="noreferrer noopener">
+              </Link>
+              <Link rel="noreferrer noopener" to='/Contact'>
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className='B_Grad mt-2'/>
