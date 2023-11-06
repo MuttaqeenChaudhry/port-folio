@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/StakHse.css";
-import cdimg from "../images/Coding.jpg";
+import cdimg from "../assets/images/Coding.jpg";
 import "animate.css";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";

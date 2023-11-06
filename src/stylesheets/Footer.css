@@ -1,8 +1,7 @@
-.Footer_Wrpr {
+#Footer_Wrpr {
     width: 100%;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 0px;   
+    height: fit-content;
+    padding-top: 1em;
 }
 
 .HTne_Wrpr {
@@ -15,7 +14,7 @@
     --dotsize : 0.25rem;
     --bgSize : 1.35rem;
     --bgPosition : 0.65rem;
-    height: 8.5vh;
+    height: 1vh;
     background: radial-gradient(circle at center, black var(--dotsize), transparent 0);
     background-size: var(--bgSize) var(--bgSize);
     background-repeat: round;
@@ -24,7 +23,7 @@
 
 .Footer {
     color: #fff;
-    background-color: black;
+    background-color: #0f0f0f;;
     display: flex;
     justify-content: space-around;
 }

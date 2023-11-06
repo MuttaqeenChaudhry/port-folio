@@ -4,41 +4,41 @@ import "../stylesheets/Footer.css";
 export default function Footer() {
   return (
     <>
-      <footer id="Footer_Wrpr">       
-          <div className="HTne_Wrpr">
-            <div className="HTne" />
+      <footer id="Footer_Wrpr">
+        <div className="HTne_Wrpr">
+          <div className="HTne" />
+        </div>
+        <div className="Footer">
+          <div>
+            <h3>ITEM #</h3>
+            <ul>
+              <li>Li</li>
+              <li>Li2</li>
+            </ul>
           </div>
-          <div className="Footer">
-            <div>
-              <h3>ITEM #</h3>
-              <ul>
-                <li>Li</li>
-                <li>Li2</li>
-              </ul>
-            </div>
-            <div>
-              <h3>ITEM #</h3>
-              <ul>
-                <li>Li</li>
-                <li>Li2</li>
-              </ul>
-            </div>
-            <div>
-              <h3>ITEM #</h3>
-              <ul>
-                <li>Li</li>
-                <li>Li2</li>
-              </ul>
-            </div>
-            <div>
-              <h3>ITEM #</h3>
-              <ul>
-                <li>Li</li>
-                <li>Li2</li>
-              </ul>
-            </div>
+          <div>
+            <h3>ITEM #</h3>
+            <ul>
+              <li>Li</li>
+              <li>Li2</li>
+            </ul>
           </div>
-          <div className="B_Grad" />
+          <div>
+            <h3>ITEM #</h3>
+            <ul>
+              <li>Li</li>
+              <li>Li2</li>
+            </ul>
+          </div>
+          <div>
+            <h3>ITEM #</h3>
+            <ul>
+              <li>Li</li>
+              <li>Li2</li>
+            </ul>
+          </div>
+        </div>
+        <div className="B_Grad" />
       </footer>
     </>
   );

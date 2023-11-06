@@ -1,0 +1,39 @@
+.WScase_Wrpr {
+    width: 100%;
+    height: fit-content;
+}
+
+.WScase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-color: #090947;
+background-image: linear-gradient(315deg, #090947 0%, #090947 74%);
+
+}
+
+.WScase_B {
+    padding: 7vmin 0em;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.WScase_B_1 {
+    height: 30vmin;
+    width: 30vmax;
+}
+
+.Sliding_Imgs {
+    animation-name: imgFade;
+    animation-duration: 2s;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.WScase_B_2 {
+    display: flex;
+    padding : 4em 0em;
+    justify-content: space-around;
+}

@@ -20,10 +20,8 @@ export default function SpaceStrz(props) {
     }
 
     function createRandomChicken() {
-      const container = document.getElementById("stars-container");
       const chicken = document.createElement("img");
       chicken.setAttribute("src", SpcShip);
-      chicken.setAttribute("alt", "-_-");
       chicken.classList.add("S51");
       const x = Math.random() * window.innerWidth;
       const y = Math.random() * window.innerHeight;

@@ -64,6 +64,11 @@
   
 }
 
+@keyframes imgFade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  
+}
 
 
 @keyframes moveltr {
@@ -78,6 +83,18 @@
 .c-prim {
   color : #61dafb !important;
 }
+.f-prim {
+  font-family: var(--PrimFnt);
+}
+
+.f-sec {
+  font-family: var(--SecFnt);
+}
+
+.mt-5 {
+  margin-top: 15px;
+}
+
 .B_Grad {
   height: 1vh;
     background: linear-gradient(139deg, #282c34, rgba(26, 188, 156, 1), #e02aff, #61dafb, #282c34);
