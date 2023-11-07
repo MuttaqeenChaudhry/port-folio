@@ -5,6 +5,8 @@ import SpcShip from "../svgs/abc.gif";
 export default function SpaceStrz(props) {
   useEffect(() => {
     const container = document.getElementById("stars-container");
+    const container2 = document.getElementById("chickensContainer");
+
     function createRandomStar() {
       const star = document.createElement("div");
       star.classList.add("star");
@@ -14,8 +16,9 @@ export default function SpaceStrz(props) {
       star.style.top = y + "px";
       container.appendChild(star);
       star.addEventListener("animationend", () => {
-        container.removeChild(star);
-        createRandomStar();
+        if(container.contains(star))
+        {container.removeChild(star);
+        createRandomStar();}
       });
     }
 
@@ -27,10 +30,13 @@ export default function SpaceStrz(props) {
       const y = Math.random() * window.innerHeight;
       chicken.style.left = x + "px";
       chicken.style.top = y + "px";
-      container.appendChild(chicken);
+      container2.appendChild(chicken);
       chicken.addEventListener("animationend", () => {
-        container.removeChild(chicken);
-        createRandomChicken();
+        if(container2.contains(chicken))
+        {
+          container2.removeChild(chicken);
+          createRandomChicken();
+        }
       });
     }
     function createRandomChickens() {
@@ -58,8 +64,8 @@ export default function SpaceStrz(props) {
   </span> 
           </h2>
         </div>
-        <div className="stars-container" id="stars-container">
-        </div>
+        <div className="stars-container" id="stars-container"></div>
+        <div className="chickensContainer" id="chickensContainer"></div>
       </div>
     </>
   );

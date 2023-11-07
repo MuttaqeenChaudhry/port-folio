@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import '../stylesheets/WorkScase.css'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong, faLeftLong } from "@fortawesome/free-solid-svg-icons";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -9,9 +10,9 @@ export default function WorkScase(props) {
     const AR_L = <FontAwesomeIcon icon={faLeftLong} size='3x' color="#fff" />;
     
     useEffect(()=>{
-        const prevButton = document.getElementById('prevButton')
-        const nextButton = document.getElementById('nextButton')
-        const ImgContainer = document.getElementById('WScase_B_1');
+        const prevButton = document.getElementById('prevButton3')
+        const nextButton = document.getElementById('nextButton3')
+        const ImgContainer = document.getElementById('WScase_B_13');
         const Imgs = ImgContainer.querySelectorAll('.Sliding_Imgs')
         let InitIndex = 0;
         const showImage = (index) => {
@@ -37,7 +38,7 @@ export default function WorkScase(props) {
         setInterval(() => {
             InitIndex = (InitIndex + 1) % Imgs.length; 
             showImage(InitIndex) 
-        }, 4200);
+        }, 4600);
        
         showImage(InitIndex)
 
@@ -47,30 +48,24 @@ export default function WorkScase(props) {
     <div className="WScase_Wrpr">
         <div className="WScase" style={{flexDirection : props.flexD}}>
             <div className='WScase_A'>
-                <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>Traveler (Car Booking App)</h2>
+                <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>EditEase</h2>
                 <ul>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim' style={{color : "white"}}>1 -  App Landing Site</li>
+                    <li className='f-sec c-prim' style={{color : "white"}}>1 -  Text Editor</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - MultiLingual</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - Text Manipulation</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Mail API</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Light/Dark Mode</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - JSON Animations</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - Data Validation</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - React UI Libraries</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - Fully Responsive </li>
                     </ScrollAnimation>
                 </ul>
             </div>
             <div className='WScase_B'>
-                <div id='WScase_B_1' className='WScase_B_1'>
+                <div id='WScase_B_13' className='WScase_B_1'>
                 <img className='Sliding_Imgs' src={props.W1} alt="1" />
                 <img className='Sliding_Imgs' src={props.W2} alt="2" />
                 <img className='Sliding_Imgs' src={props.W3} alt="3" />
@@ -82,8 +77,8 @@ export default function WorkScase(props) {
                 <img className='Sliding_Imgs' src={props.W9} alt="9" />
                 </div>
                 <div className='WScase_B_2'>
-                    <button className='btn_rnd' id='prevButton'>{AR_L}</button>
-                    <button className='btn_rnd' id='nextButton'>{AR_R}</button>
+                    <button className='btn_rnd' id='prevButton3'>{AR_L}</button>
+                    <button className='btn_rnd' id='nextButton3'>{AR_R}</button>
                 </div>
             </div>
         </div>
