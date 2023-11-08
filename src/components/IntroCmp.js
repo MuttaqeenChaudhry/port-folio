@@ -11,8 +11,7 @@ export default function IntroCmp() {
     lottie.destroy()
     lottie.loadAnimation({
       container : Anim_Cntnr.current,
-      animationData : KbrdAnim,
-      loop: 1,   
+      animationData : KbrdAnim   
     })
   },[]);
 
