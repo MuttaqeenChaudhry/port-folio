@@ -10,9 +10,9 @@ export default function WorkScase(props) {
     const AR_L = <FontAwesomeIcon icon={faLeftLong} size='3x' color="#fff" />;
     
     useEffect(()=>{
-        const prevButton = document.getElementById('prevButton3')
-        const nextButton = document.getElementById('nextButton3')
-        const ImgContainer = document.getElementById('WScase_B_13');
+        const prevButton = document.getElementById('prevButton4')
+        const nextButton = document.getElementById('nextButton4')
+        const ImgContainer = document.getElementById('WScase_B_14');
         const Imgs = ImgContainer.querySelectorAll('.Sliding_Imgs')
         let InitIndex = 0;
         const showImage = (index) => {
@@ -48,24 +48,24 @@ export default function WorkScase(props) {
     <div className="WScase_Wrpr">
         <div className="WScase" style={{flexDirection : props.flexD}}>
             <div className='WScase_A'>
-                <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>EditEase</h2>
+                <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>ATT</h2>
                 <ul>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim' style={{color : "white"}}>1 -  Text Editor</li>
+                    <li className='f-sec c-prim' style={{color : "white"}}>1 -  Timtables Automation</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - Text Manipulation</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - Faculty Portals</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Light/Dark Mode</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Live Timetables</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - Fully Responsive </li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - PHP, SQL </li>
                     </ScrollAnimation>
                 </ul>
             </div>
             <div className='WScase_B'>
-                <div id='WScase_B_13' className='WScase_B_1'>
+                <div id='WScase_B_14' className='WScase_B_1'>
                 <img className='Sliding_Imgs' src={props.W1} alt="1" />
                 <img className='Sliding_Imgs' src={props.W2} alt="2" />
                 <img className='Sliding_Imgs' src={props.W3} alt="3" />
@@ -77,8 +77,8 @@ export default function WorkScase(props) {
                 <img className='Sliding_Imgs' src={props.W9} alt="9" />
                 </div>
                 <div className='WScase_B_2'>
-                    <button className='btn_rnd' id='prevButton3'>{AR_L}</button>
-                    <button className='btn_rnd' id='nextButton3'>{AR_R}</button>
+                    <button className='btn_rnd' id='prevButton4'>{AR_L}</button>
+                    <button className='btn_rnd' id='nextButton4'>{AR_R}</button>
                 </div>
             </div>
         </div>

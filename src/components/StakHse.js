@@ -14,40 +14,53 @@ export default function CdngImg() {
   const LG_E = <FontAwesomeIcon icon={faE} color="#191970" />;
   const LG_R = <FontAwesomeIcon icon={faR} color="#89CFF0" />;
   const LG_N = <FontAwesomeIcon icon={faN} color="#191970" />;
-  useEffect(() => {
-    let scrollTimeout;
-    const HandleScroll = () => {
-          clearTimeout(scrollTimeout);
-          scrollTimeout = setTimeout(() => {
-            const M_div2 = document.querySelector("#M_div2");
-            const M_div3 = document.querySelector("#M_div3");
-            const Init_Mrg1 = 8;
-            const Init_Mrg2 = 16;
-            let scrollY = window.scrollY;
-            if (window.scrollY > 0) {
-              if(window.innerWidth >= 1200)
-              {
-                M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 550px))`;
-                M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 880px))`;
-              }
-              else {
-                M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 295px))`;
-              M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 590px))`;
 
-              }
-            }
-          }, 5);
-      
+  useEffect(() => {
+    const TargetElement = document.querySelector(".Stacked_Wrpr");
+    let scrollTimeout;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
     };
-    window.addEventListener('scroll', HandleScroll);
-    return () => {
-      window.removeEventListener('scroll', HandleScroll)
+    const observer = new IntersectionObserver(callBack, options);
+    observer.observe(TargetElement);
+    function callBack(entries, observer) {
+      console.log(entries);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          TargetElement.classList.add('imgFade')
+          document.addEventListener('scroll', DropStacks)
+        } else {
+          document.removeEventListener('scroll', DropStacks)
+
+        }
+      });
     }
+
+    const DropStacks = () => {
+        const M_div2 = document.querySelector("#M_div2");
+        const M_div3 = document.querySelector("#M_div3");
+        const Init_Mrg1 = 8;
+        const Init_Mrg2 = 16;
+        let scrollY = window.scrollY;
+
+          if(window.innerWidth >= 1200)
+          {
+            M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 550px))`;
+            M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 880px))`;
+          }
+          else {
+            M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 295px))`;
+          M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 590px))`;
+        }
+    }
+
   }, []);
 
   return (
     <>
-      <div className="Stacked_Wrpr">
+      <div className="Stacked_Wrpr" id="Stacked_Wrpr">
         <div className="stacked-divs">
           <div className="div1">
             <img className="blur Img_CDim" src={cdimg} alt="Code" />

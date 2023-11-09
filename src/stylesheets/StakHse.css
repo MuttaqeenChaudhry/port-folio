@@ -14,7 +14,7 @@
     position: absolute;
     margin: 0 6%;
     width: 87%;
-    aspect-ratio: 1/fit-content;
+    aspect-ratio: 1/0.3;
     border-radius: 1em;
    
   }

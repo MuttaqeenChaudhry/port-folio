@@ -50,16 +50,16 @@ export default function WorkScase(props) {
             <div className='WScase_A'>
                 <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>NewsAven</h2>
                 <ul>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
                     <li className='f-sec c-prim' style={{color : "white"}}>1 -  Public News API</li>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
                     <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - Dynamic Navigation</li>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
                     <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Pagination</li>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
                     <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - Bootstrap</li>
                     </ScrollAnimation>
                 </ul>
