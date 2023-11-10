@@ -4,20 +4,23 @@ import cdimg from "../assets/images/Coding.jpg";
 import "animate.css";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
-import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faM, faE, faR, faN } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import lottie from "lottie-web";
+import Astro2 from '../animations/Astro2.json'
+import Astro3 from '../animations/Asto3.json'
 
-export default function CdngImg() {
+export default function StakHse() {
   const LG_M = <FontAwesomeIcon icon={faM} color="#89CFF0" />;
   const LG_E = <FontAwesomeIcon icon={faE} color="#191970" />;
   const LG_R = <FontAwesomeIcon icon={faR} color="#89CFF0" />;
   const LG_N = <FontAwesomeIcon icon={faN} color="#191970" />;
+  let AnimCntnr5 = React.createRef();
+  let AnimCntnr6 = React.createRef();
 
   useEffect(() => {
-    const TargetElement = document.querySelector(".Stacked_Wrpr");
-    let scrollTimeout;
+    const TargetElement = document.querySelector("#stacked-divs");
     const options = {
       root: null,
       rootMargin: "0px",
@@ -48,7 +51,7 @@ export default function CdngImg() {
           if(window.innerWidth >= 1200)
           {
             M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 550px))`;
-            M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 880px))`;
+            M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 995px))`;
           }
           else {
             M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 295px))`;
@@ -58,19 +61,31 @@ export default function CdngImg() {
 
   }, []);
 
+  useEffect(()=>{
+   lottie.loadAnimation({
+    container : AnimCntnr5.current,
+    animationData : Astro2
+   })
+   lottie.loadAnimation({
+    container : AnimCntnr6.current,
+    animationData : Astro3
+   })
+  },[])
+
+
+
   return (
     <>
       <div className="Stacked_Wrpr" id="Stacked_Wrpr">
-        <div className="stacked-divs">
+      <div className="AstroTwo">
+          <div ref={AnimCntnr5} className="AnimCntnr5"/>
+        </div>
+        <div className="stacked-divs" id="stacked-divs">
           <div className="div1">
             <img className="blur Img_CDim" src={cdimg} alt="Code" />
           </div>
           <div id="M_div2" className="div2">
-            <div className="div2_lft">
-              <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/skytsunami.png"
-                alt="Muttaqeen"
-              />
+            <div ref ={AnimCntnr6} className="div2_lft">
             </div>
             <div className="div2_rgt">
               <h3>I Work with,</h3>
@@ -106,15 +121,11 @@ export default function CdngImg() {
             </div>
           </div>
           <div id="M_div3" className="div3">
-            <div style={{ border: "0px" }} className="div2_rgt">
-              <h3 style={{ border: "0px" }}>I Work with,</h3>
-              <ul>
-                <li>MongoDB</li>
-                <li>Express.js</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Full Stack Web Dev</li>
-              </ul>
+            <div style={{ border: "0px" }}>
+              <div style={{width:'97%', margin:'auto'}}>
+              <h3 className="f-prim">Personal Statement,</h3>
+              <p style={{lineHeight:"30px"}}className="f-sec" >With unwavering commitment, I channel my passion for web development into crafting captivating online experiences for my clients. From inception to implementation, my dedication shines through every line of code and pixel perfected. Meticulously blending creativity with technical finesse, I aspire to transcend client expectations, ensuring each website I build stands as a testament to my relentless pursuit of excellence. In this ever-evolving digital landscape, I am steadfast in my mission to deliver not just websites, but digital masterpieces that leave a lasting impression and propel businesses forward.</p>
+              </div>
             </div>
           </div>
         </div>
