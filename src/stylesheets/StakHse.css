@@ -20,7 +20,7 @@
   margin-top: 50px;
     position: relative;
     width: 100%;
-    height: 1500px;    
+    height: 2000px;    
   }
   
   .div1, .div2, .div3 {
@@ -44,14 +44,13 @@
   }
 
   .div2 {
+    color: #61dafb;
     border: 2px solid #fff;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    background :-moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    background-color: #0f0f0f;
   }
 
   .div2_lft {
@@ -70,6 +69,7 @@
   .div2_rgt ul {
     padding: 2vmin;
     border-style: solid;
+    border-color: #fff;
     border-width: 0px 0px 0px 3px;
   }
 
@@ -78,11 +78,39 @@
   }
   
   .div3 {
+    display: flex;
+    flex-direction: column-reverse;
     border: 2px solid #fff;
     z-index: 1;
-    background :-moz-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
-	  background: -webkit-linear-gradient(-45deg, rgba(142, 68, 173, 1) 0%, rgba(26, 188, 156, 1)  100%);
-    background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #0f0f0f;
+  }
+
+  .Stak3Left {
+    overflow: hidden;
+    color: #61dafb;
+    width: 100%;
+
+  }
+
+  .Stak3Left h3 {
+    animation-name: shadowToggle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-size: 48px;
+  }
+
+  .Stak3Left p {
+    text-align: justify;
+  }
+
+  .Stak3Right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .AnimCntnr7 {
+    width: 550px;
   }
 
 

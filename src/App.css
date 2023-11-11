@@ -95,6 +95,16 @@
   
 }
 
+@keyframes moveltr {
+  0% {
+    left: 10px /* Start from outside the left edge of the screen */
+  }
+  100% {
+    left: 100vw; /* Move to the right edge of the screen */
+  }
+}
+
+  
 .imgFade {
   animation-name: imgFade;
   animation-duration: 2s;
@@ -103,16 +113,6 @@
   animation-name: imgFade;
   animation-duration: 2s;
   animation-delay: 1s;
-}
-
-
-@keyframes moveltr {
-  0% {
-    left: 10px /* Start from outside the left edge of the screen */
-  }
-  100% {
-    left: 100vw; /* Move to the right edge of the screen */
-  }
 }
 
 .c-prim {

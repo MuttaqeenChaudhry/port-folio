@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../stylesheets/IntroCmp.css";
-import DevMe from "../animations/ZonedIn.json";
+import DevMe from "../animations/DevMe.json";
 import Astro from "../animations/Astro.json";
 import Solar from "../animations/Solar.json";
 import lottie from "lottie-web";
