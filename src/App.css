@@ -85,6 +85,17 @@
   
 }
 
+@keyframes imgFadeo {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  
+}
+
+.imgFadeo {
+  animation-name: imgFadeo !important;
+  animation-duration: 2s;
+}
+
 @keyframes three60 {
   0% {
     transform: rotate(0deg);
@@ -104,7 +115,6 @@
   }
 }
 
-  
 .imgFade {
   animation-name: imgFade;
   animation-duration: 2s;

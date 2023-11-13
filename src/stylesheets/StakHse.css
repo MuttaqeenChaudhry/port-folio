@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f0f0f;
+    background-color: #1f132a;
   }
 
   .div2_lft {
@@ -82,17 +82,17 @@
     flex-direction: column-reverse;
     border: 2px solid #fff;
     z-index: 1;
-    background-color: #0f0f0f;
+    background-color: #1F132A;
   }
 
   .Stak3Left {
     overflow: hidden;
-    color: #61dafb;
     width: 100%;
 
   }
 
   .Stak3Left h3 {
+    color: #fff;
     animation-name: shadowToggle;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -100,6 +100,7 @@
   }
 
   .Stak3Left p {
+    color: #61dafb;
     text-align: justify;
   }
 

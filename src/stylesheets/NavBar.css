@@ -13,12 +13,6 @@
 }
 
 
-.mt-2 {
-    position: relative;
-    margin-top: 0px;
-    z-index: 3000;
-}
-
 .Nav-Bar {
     width: 100%;
     display: flex;
@@ -27,6 +21,7 @@
 }
 
 .Nav-Left {
+    flex : 1;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -48,7 +43,7 @@
 .Nav-Right {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex : 1;
     align-items: center;
     justify-content: space-around;
 }
@@ -62,4 +57,79 @@
 
 .Nav-Right a:hover {
     color: #fff;
+}
+
+.NavMenu {
+    color: #fff;
+    display: none;
+    padding: 1vmin;
+}
+
+@media (max-width : 1200px) {
+    .Main_Title {
+    font-size: calc(15px + 1vmin);
+}
+
+.Nav-Left img {
+    width: 7vmin;
+}
+.Nav-Right a {
+    font-size: calc(10px + 1vmin);
+}
+}
+
+@media (min-width : 769px) {
+    .PortMenuWrpr {
+        display: none;
+    }
+    .PortMenu {
+        display: none;
+    }
+}
+@media (max-width : 768px) {
+    .Main_Title {
+    font-size: calc(15px + 1vmin);
+}
+
+.Nav-Left img {
+    width: 7vmin;
+}
+.Nav-Right a {
+    font-size: calc(10px + 1vmin);
+}
+
+.Nav-Right {
+    display: none;
+    flex-direction: row;
+    flex : 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.NavMenu {
+    display: block;
+}
+
+.PortMenuWrpr {
+    overflow: hidden;
+    animation-name: fadeInDownBig;
+    animation-duration: 1s;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+    width: 100%;
+    height: 20vh;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0px 0px 1px 0px;
+    background-color: #0f0f0f;
+}
+
+.PortMenu {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 }
