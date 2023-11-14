@@ -1,4 +1,5 @@
 .IntroCmp-Wrpr {
+    overflow: hidden;
     position: relative;
     height: fit-content;
     width: 100%;  
@@ -39,7 +40,6 @@
     width: 550px;
 }
 
-
 .p_style {
     color : #fff;
     font-family: 'Zeyada';
@@ -66,7 +66,80 @@
     height: 650px;
 }
 
+@media (max-width : 1200px) {
+    
+.Section_One {
+    height: fit-content;
+}
 
+.AnimCntnr {
+    width: 650px;
+}
+
+.AnimCntnr2 {
+    width: 450px;
+}
+
+.p_style {
+    font-size: calc(17px + 1vmin);
+}
+
+.IntroCmp-Wrpr h2 {
+    font-size: 17px;
+}
+
+.Section_Three {
+    transform: translateY(-120px);
+}
+
+.AnimCntnr3 {
+    width: 550px;
+    height: 550px;
+}
+
+}
+
+@media (max-width : 768px) {
+    
+    .Section_One {
+        height: fit-content;
+    }
+    
+    .AnimCntnr {
+        width: 550px;
+    }
+
+    .Section_Two {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .AnimCntnr2 {
+        width: 350px;
+    }
+    
+    .p_style {
+        font-size: calc(13px + 1vmin);
+    }
+    
+    .IntroCmp-Wrpr h2 {
+        font-size: 11px;
+    }
+    
+    .Section_Three {
+        width: 40%;
+        transform: translateY(-100px);
+    }
+    
+    .AnimCntnr3 {
+        width: 450px;
+        height: 450px;
+    }
+    
+    }
 
 
 

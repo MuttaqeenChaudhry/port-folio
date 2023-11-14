@@ -9,19 +9,24 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 export default function NavBar() {
   const [display, setDisplay] = useState("none");
   const handleMenu = () => {
-    if (display == "none") {
-      setDisplay("block");
+    if (display == 'none') {
+      setDisplay('block');
     } else {
-      setDisplay("none");
+      setDisplay('none');
     }
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const Nav_Bar = document.querySelector(".Nav-Wrapper");
-      if (window.scrollY > 20) {
-        Nav_Bar.classList.add("anim_d_down");
-      } else {
-        Nav_Bar.classList.remove("anim_d_down");
+      const Nav_Wrpr = document.querySelector(".Nav-Wrapper");
+      if (window.scrollY > 100) {
+        Nav_Wrpr.classList.remove("imgFadeo");
+        Nav_Wrpr.classList.add("anim_d_down");
+        Nav_Wrpr.style.backgroundColor = '#F5F5F5 ';
+        Nav_Wrpr.style.position = 'fixed';
+      } else if(window.scrollY < 100) {
+        Nav_Wrpr.style.position = 'static';
+        Nav_Wrpr.style.backgroundColor = '#0f0f0f';
+        Nav_Wrpr.classList.remove("anim_d_down");
       }
     });
   }, []);
@@ -58,8 +63,8 @@ export default function NavBar() {
                 <FontAwesomeIcon icon={faBars} color="#61dafb" onClick={handleMenu}/>
                 </div>
             </div>
-
-            <div className="PortMenuWrpr" style={{ display: display }}>
+          </div>
+          <div className="PortMenuWrpr" style={{ display: display }}>
               <div className="PortMenu">
               <span>
                 <Link rel="noreferrer noopener" to="/" className="c-prim">
@@ -83,7 +88,6 @@ export default function NavBar() {
               </span>
               </div>
             </div>
-          </div>
         </nav>
       </header>
     </>
