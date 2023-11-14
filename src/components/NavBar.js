@@ -63,8 +63,7 @@ export default function NavBar() {
                 <FontAwesomeIcon icon={faBars} color="#61dafb" onClick={handleMenu}/>
                 </div>
             </div>
-          </div>
-          <div className="PortMenuWrpr" style={{ display: display }}>
+            <div className="PortMenuWrpr" style={{ display: display }}>
               <div className="PortMenu">
               <span>
                 <Link rel="noreferrer noopener" to="/" className="c-prim">
@@ -88,6 +87,8 @@ export default function NavBar() {
               </span>
               </div>
             </div>
+          </div>
+         
         </nav>
       </header>
     </>

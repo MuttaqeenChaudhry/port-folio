@@ -54,8 +54,8 @@ export default function StakHse() {
         M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 550px))`;
         M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 995px))`;
       } else {
-        M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 295px))`;
-        M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 590px))`;
+        M_div2.style.top = `calc(min(${Init_Mrg1}vmin + ${scrollY}px, 350px))`;
+        M_div3.style.top = `calc(min(${Init_Mrg2}vmin + ${scrollY}px, 570px))`;
       }
     };
   }, []);
@@ -83,7 +83,7 @@ export default function StakHse() {
         </div>
         <div className="stacked-divs" id="stacked-divs">
           <div className="div1">
-            <img className="blur Img_CDim" src={cdimg} alt="Code" />
+            <img className="blur CodingImg" src={cdimg} alt="Code" />
           </div>
           <div id="M_div2" className="div2">
             <div ref={AnimCntnr6} className="div2_lft"></div>
