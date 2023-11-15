@@ -9,8 +9,8 @@ import ContactMn from "./components/ContactMn";
 import { Routes, Route } from "react-router-dom";
 import RedirectArrow from "./components/RedirectArrow";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAnglesUp, faBars } from "@fortawesome/free-solid-svg-icons";
-library.add(faAnglesUp);
+import { faAnglesUp, faBars, faStar } from "@fortawesome/free-solid-svg-icons";
+library.add(faAnglesUp, faBars, faStar);
 
 function App() {
   const handleClick = () => {

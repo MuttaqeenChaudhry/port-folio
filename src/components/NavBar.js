@@ -16,16 +16,27 @@ export default function NavBar() {
     }
   };
   useEffect(() => {
+    const MainTitle = document.querySelector('#MainTitle')
     window.addEventListener("scroll", () => {
       const Nav_Wrpr = document.querySelector(".Nav-Wrapper");
       if (window.scrollY > 100) {
         Nav_Wrpr.classList.remove("imgFadeo");
         Nav_Wrpr.classList.add("anim_d_down");
+        MainTitle.style.fontSize = '6vmin';
+        MainTitle.style.color = '#0f0f0f';
         Nav_Wrpr.style.backgroundColor = '#F5F5F5 ';
+        Nav_Wrpr.style.height = '12vmin ';
+        Nav_Wrpr.style.borderWidth = '0px 0px 5px 0px';
+        Nav_Wrpr.style.borderStyle = 'solid';
+        Nav_Wrpr.style.borderColor = '#61dafb';
         Nav_Wrpr.style.position = 'fixed';
-      } else if(window.scrollY < 100) {
+      } 
+      else if(window.scrollY < 100) {
         Nav_Wrpr.style.position = 'static';
+        MainTitle.style.fontSize = '21px';
+        MainTitle.style.color = '#61dafb';
         Nav_Wrpr.style.backgroundColor = '#0f0f0f';
+        Nav_Wrpr.style.border = 'none';
         Nav_Wrpr.classList.remove("anim_d_down");
       }
     });
@@ -40,7 +51,7 @@ export default function NavBar() {
             <div className="B_Grad mt-2" />
               <div className="Nav-Bar">
                 <div className="Nav-Left">
-                <a className="Main_Title" href="" rel="noreferrer noopener">
+                <a className="Main_Title" href="" rel="noreferrer noopener" id="MainTitle">
                   @muttaqeen_231
                 </a>
                 <img src={webdev} alt="Dev." />
@@ -63,7 +74,8 @@ export default function NavBar() {
                 <FontAwesomeIcon icon={faBars} color="#61dafb" onClick={handleMenu}/>
                 </div>
             </div>
-            <div className="PortMenuWrpr" style={{ display: display }}>
+          </div>
+          <div className="PortMenuWrpr" style={{ display: display }}>
               <div className="PortMenu">
               <span>
                 <Link rel="noreferrer noopener" to="/" className="c-prim">
@@ -87,7 +99,6 @@ export default function NavBar() {
               </span>
               </div>
             </div>
-          </div>
          
         </nav>
       </header>

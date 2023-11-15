@@ -33,7 +33,7 @@
     font-weight: bold;
     margin: auto 12px;
     color: var(--SecClr);
-    font-size: calc(20px + 1vmin);
+    font-size: calc(21px);
 }
 
 .Nav-Left img {

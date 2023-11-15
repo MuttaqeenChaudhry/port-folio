@@ -1,6 +1,4 @@
 .Rocket_Wrpr {
-    animation-name: imgFade;
-    animation-duration: 2s;
     position: fixed;
     right: 1%;
     bottom: 5%;
@@ -16,13 +14,17 @@
     align-items: center;
     width: fit-content;
     height: fit-content;
-   background-color: #282c34;
+   background-color: transparent;
    border-style: solid;
    border-color: #61dafb;
     border-radius: 50%;
 }
+.RocketContainer:hover {
+   background-color: #2073a0;
+
+}
 
 .RocketContainer:active {
-    background-color: dodgerblue;
+    background-color: #3b8bc8;
 
 }
