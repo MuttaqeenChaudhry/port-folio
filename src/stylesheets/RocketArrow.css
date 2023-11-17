@@ -14,17 +14,30 @@
     align-items: center;
     width: fit-content;
     height: fit-content;
-   background-color: transparent;
+   background-color: #3b8bc8;
    border-style: solid;
    border-color: #61dafb;
     border-radius: 50%;
 }
 .RocketContainer:hover {
-   background-color: #3b8bc8;
+   background-color: transparent;
 
 }
 
 .RocketContainer:active {
-    background-color: #2073a0;
+    background-color: transparent;
+}
 
+@media (max-width: 1200px) {
+    
+    .RocketContainer {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .RocketContainer {
+        padding: 3px;
+    }
 }
