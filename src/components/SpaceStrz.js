@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "../stylesheets/SpaceStrz.css";
-import SpcShip from "../svgs/abc.gif";
+import Lottie from "lottie-web";
+import Waves from '../animations/Waves.json'
 
 export default function SpaceStrz(props) {
+  let WavesCntnr = React.createRef();
   useEffect(() => {
     const container = document.getElementById("stars-container");
-    const container2 = document.getElementById("chickensContainer");
+    Lottie.destroy();
+    Lottie.loadAnimation({
+      container : WavesCntnr.current,
+      animationData : Waves 
+    });
 
     function createRandomStar() {
       const star = document.createElement("div");
@@ -22,28 +28,6 @@ export default function SpaceStrz(props) {
       });
     }
 
-    function createRandomChicken() {
-      const chicken = document.createElement("img");
-      chicken.setAttribute("src", SpcShip);
-      chicken.classList.add("S51");
-      const x = Math.random() * window.innerWidth;
-      const y = Math.random() * window.innerHeight;
-      chicken.style.left = x + "px";
-      chicken.style.top = y + "px";
-      container2.appendChild(chicken);
-      chicken.addEventListener("animationend", () => {
-        if(container2.contains(chicken))
-        {
-          container2.removeChild(chicken);
-          createRandomChicken();
-        }
-      });
-    }
-    function createRandomChickens() {
-      for (let i = 0; i < 2; i++) createRandomChicken();
-    }
-
-    createRandomChickens();
 
     function createRandomStars(number) {
       for (let i = 0; i < number; i++) createRandomStar();
@@ -55,6 +39,10 @@ export default function SpaceStrz(props) {
     <>
       <div className="SS_Wrpr">
         <div className="SS_Content">
+        <div className="WavesContainer">
+        <div ref={WavesCntnr} className="WavesIter"/>
+       </div>
+      
           <h2 style={{ zIndex: "2" }}>
             <span className="Fnt_Uu" style={{ color: "white" }}>
               {props.Prim}
@@ -65,7 +53,6 @@ export default function SpaceStrz(props) {
           </h2>
         </div>
         <div className="stars-container" id="stars-container"></div>
-        <div className="chickensContainer" id="chickensContainer"></div>
       </div>
     </>
   );
