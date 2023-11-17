@@ -78,76 +78,61 @@
 @media (max-width: 1200px) {
    
 .SS_Wrpr {
-    border: 1px solid yellow;
     height: fit-content;
 }
 
 .SS_Content {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
     font-size: 6vmin;
-    font-family: Roboto;
-    text-transform: uppercase;
 }
 
 .WavesContainer {
-    position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
 }
 
 .WavesIter {
-    width: 600px;
+    width: 400px;
 }
 
 .stars-container {
-    overflow: hidden;
-    position: relative;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/0.5;
 }
 
 
 .star {
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    animation-name: fade;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-    
+    width: 3px;
+    height: 3px;
 }
-
-.S51 {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    position: absolute;
-    animation: fade2 10s alternate, moveltr 5s linear;
-
-
-}
-
-.Fnt_Uu {   
-    font-family: Ubuntu;
-}
-
-.txtStroke {    
-    -webkit-text-stroke-color: var(--SecClr);
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-fill-color: transparent;
-}
-
-.shadwToogle {
-    animation-name: shadowToggle;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  } 
     
 }  
+
+@media (max-width: 768px) {
+   
+    .SS_Wrpr {
+        height: 55vh;
+    }
+    
+    .SS_Content {
+        font-size: 4vmin;
+    }
+    
+    .WavesContainer {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .WavesIter {
+        width: 300px;
+    }
+    
+    .stars-container {
+        aspect-ratio: 1/1;
+    }
+    
+    
+    .star {
+        width: 2px;
+        height: 2px;
+    }
+        
+    }  
