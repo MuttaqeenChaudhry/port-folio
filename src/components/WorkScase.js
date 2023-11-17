@@ -46,9 +46,9 @@ export default function WorkScase(props) {
   return (
     <>
     <div className="WScase_Wrpr">
-        <div className="WScase" style={{flexDirection : props.flexD}}>
+        <div className="WScase">
             <div className='WScase_A'>
-                <h2 style={{fontSize:"5vmin", color:'white'}} className='f-ub'>Traveler (Car Booking App)</h2>
+                <h2 className='f-ub'>Traveler</h2>
                 <ul>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
                     <li className='f-sec c-prim' style={{color : "white"}}>1 -  App Landing Site</li>

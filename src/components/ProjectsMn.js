@@ -52,10 +52,10 @@ export default function ProjectsMn() {
     <>
       <div className="Project_Wrpr">
         <SpaceStrz numberofstars={5} Prim="Work" Sec='Folio'/>
-        <WorkScase flexD="row" W1={W1} W2={W2} W3={W3} W4={W4} W5={W5} W6={W6} W7={W7} W8={W8} W9={W9}/>      
-        <WorkScase2 flexD='row-reverse' W1={NA1} W2={NA2} W3={NA3} W4={NA4} W5={NA5} W6={NA6} W7={NA7} W8={NA8} W9={NA9}/>    
-        <WorkScase3 flexD='row' W1={EE1} W2={EE2} W3={EE3} W4={EE4} W5={EE5} W6={EE6} W7={EE7} W8={EE8} W9={EE9}/>    
-        <WorkScase4 flexD='row-reverse' W1={AT1} W2={AT2} W3={AT3} W4={AT4} W5={AT5} W6={AT6} W7={AT7} W8={AT8} W9={AT9}/>    
+        <WorkScase  W1={W1} W2={W2} W3={W3} W4={W4} W5={W5} W6={W6} W7={W7} W8={W8} W9={W9}/>      
+        <WorkScase2 W1={NA1} W2={NA2} W3={NA3} W4={NA4} W5={NA5} W6={NA6} W7={NA7} W8={NA8} W9={NA9}/>    
+        <WorkScase3 W1={EE1} W2={EE2} W3={EE3} W4={EE4} W5={EE5} W6={EE6} W7={EE7} W8={EE8} W9={EE9}/>    
+        <WorkScase4 W1={AT1} W2={AT2} W3={AT3} W4={AT4} W5={AT5} W6={AT6} W7={AT7} W8={AT8} W9={AT9}/>    
       </div>
     </>
   );
