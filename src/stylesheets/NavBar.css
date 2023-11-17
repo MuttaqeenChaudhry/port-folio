@@ -3,13 +3,11 @@
     z-index: 100;
     width: 100%;
     background-color: #0f0f0f;
-    overflow: hidden;
-
 }
 
 .anim_d_down {
     animation: Dropdown;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
 }
 
 
@@ -17,23 +15,29 @@
     width: 100%;
     display: flex;
     height: 8vmin;
-    overflow: hidden
 }
 
 .Nav-Left {
     flex : 1;
-    overflow: hidden;
     display: flex;
     align-items: center;
-    width: fit-content;
+    height: 100%;
 }
 
 .Main_Title {
+    text-shadow: 1px 1px 1px #0f0f0f;
+    width: fit-content;
+    height: fit-content;
     font-family: Zeyada;
-    font-weight: bold;
-    margin: auto 12px;
     color: var(--SecClr);
-    font-size: calc(21px);
+    font-size: 3vmin;
+}
+
+.TxtAnim {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 
 .Nav-Left img {
@@ -77,19 +81,6 @@
 }
 }
 
-@media (min-width : 768px) {
-    .NavMenu {
-    display: none;
-}
-    .PortMenuWrpr {
-        display: none;
-    }
-
-    .PortMenu {
-        display: none;
-    }
-}
-
 @media (max-width : 768px) {
     .Main_Title {
     font-size: calc(15px + 1vmin);
@@ -100,41 +91,5 @@
 }
 .Nav-Right a {
     font-size: calc(10px + 1vmin);
-}
-
-.Nav-Right {
-    display: none;
-    flex-direction: row;
-    flex : 1;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.NavMenu {
-    display: block;
-    padding: 1vmin;
-}
-
-.PortMenuWrpr {
-    overflow: hidden;
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    height: 30vh;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 0px 0px 1px 0px;
-    background-color: #0f0f0f;
-}
-
-.PortMenu {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
 }
 }

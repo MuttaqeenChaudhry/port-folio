@@ -3,8 +3,6 @@ import "../stylesheets/NavBar.css";
 import webdev from "../svgs/web_dev.svg";
 import "animate.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar() {
   const [display, setDisplay] = useState("none");
@@ -19,25 +17,30 @@ export default function NavBar() {
     const MainTitle = document.querySelector('#MainTitle')
     window.addEventListener("scroll", () => {
       const Nav_Wrpr = document.querySelector(".Nav-Wrapper");
+      const Nav_Right = document.querySelector('#Nav_Right');
+      const Nav_Left = document.querySelector('#Nav_Left');
       if (window.scrollY > 100) {
-        Nav_Wrpr.classList.remove("imgFadeo");
-        Nav_Wrpr.classList.add("anim_d_down");
+          Nav_Wrpr.classList.add("anim_d_down");
+         Nav_Wrpr.style.height = '10vmin ';
+         Nav_Wrpr.style.position = 'fixed';
+        Nav_Wrpr.style.backgroundColor = 'transparent ';
+        Nav_Left.style.width = '100%';
+        Nav_Left.style.height = '100%';
+        Nav_Left.style.justifyContent = 'center';
+        Nav_Right.style.display = 'none';
+        Nav_Left.classList.add('TxtAnim')
         MainTitle.style.fontSize = '6vmin';
-        MainTitle.style.color = '#0f0f0f';
-        Nav_Wrpr.style.backgroundColor = '#F5F5F5 ';
-        Nav_Wrpr.style.height = '12vmin ';
-        Nav_Wrpr.style.borderWidth = '0px 0px 5px 0px';
-        Nav_Wrpr.style.borderStyle = 'solid';
-        Nav_Wrpr.style.borderColor = '#61dafb';
-        Nav_Wrpr.style.position = 'fixed';
-      } 
+        MainTitle.style.color = '#61dafb';  } 
       else if(window.scrollY < 100) {
         Nav_Wrpr.style.position = 'static';
-        MainTitle.style.fontSize = '21px';
-        MainTitle.style.color = '#61dafb';
-        Nav_Wrpr.style.backgroundColor = '#0f0f0f';
-        Nav_Wrpr.style.border = 'none';
         Nav_Wrpr.classList.remove("anim_d_down");
+        Nav_Wrpr.style.backgroundColor = '#0f0f0f';
+        Nav_Left.style.justifyContent = 'flex-start';
+        Nav_Right.style.display = 'flex'; 
+        MainTitle.style.fontSize = '3vmin';
+        MainTitle.style.color = '#61dafb';
+        Nav_Left.classList.remove('TxtAnim')
+      
       }
     });
   }, []);
@@ -47,16 +50,19 @@ export default function NavBar() {
       <header>
         <nav>
           <div className="Nav-Wrapper ">
-            
-            <div className="B_Grad mt-2" />
+          <div className="B_Grad mt-2" />
               <div className="Nav-Bar">
-                <div className="Nav-Left">
-                <a className="Main_Title" href="" rel="noreferrer noopener" id="MainTitle">
+                <div className="Nav-Left" id="Nav_Left">
+                  <div>
+                  <a className="Main_Title" href="" rel="noreferrer noopener" id="MainTitle">
                   @muttaqeen_231
                 </a>
+                </div>
+                <div style={{overflow:'hidden'}}>
                 <img src={webdev} alt="Dev." />
                 </div>
-                <div className="Nav-Right">
+                </div>
+                <div className="Nav-Right" id="Nav_Right">
                 <Link rel="noreferrer noopener" to="/">
                   Home
                 </Link>
@@ -70,37 +76,10 @@ export default function NavBar() {
                   Contact
                 </Link>
                 </div>
-                <div className="NavMenu">
-                <FontAwesomeIcon icon={faBars} color="#61dafb" onClick={handleMenu}/>
-                </div>
             </div>
-          </div>
-          <div className="PortMenuWrpr" style={{ display: display }}>
-              <div className="PortMenu">
-              <span>
-                <Link rel="noreferrer noopener" to="/" className="c-prim">
-                  Home
-                </Link>
-              </span>
-              <span>
-              <Link rel="noreferrer noopener" to="/Projects" className="c-prim">
-                Projects
-              </Link>
-              </span>
-              <span>
-              <Link rel="noreferrer noopener" to="/AboutMe" className="c-prim">
-                About
-              </Link>
-              </span>
-              <span>
-              <Link rel="noreferrer noopener" to="/Contact" className="c-prim">
-                Contact
-              </Link>
-              </span>
-              </div>
-            </div>
-         
+          </div>   
         </nav>
+    
       </header>
     </>
   );
