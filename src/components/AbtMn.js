@@ -1,26 +1,41 @@
-import React from 'react';
-import SpaceStrz from './SpaceStrz'
-import WorkScase from './WorkScase';
-import WorkScase2 from './WorkScase2';
-import '../stylesheets/AbtMn.css'
-import W1 from '../assets/images/W1.jpg'
-import W2 from '../assets/images/W2.jpg'
-import W3 from '../assets/images/W3.jpg'
-import W4 from '../assets/images/W4.jpg'
-import W5 from '../assets/images/W5.jpg'
-import W6 from '../assets/images/W6.jpg'
-import W7 from '../assets/images/W7.jpg'
-import W8 from '../assets/images/W8.jpg'
-import W9 from '../assets/images/W9.jpg'
-
+import React from "react";
+import SpaceStrz from "./SpaceStrz";
+import "../stylesheets/AbtMn.css";
 
 export default function AbtMn() {
   return (
     <>
-    <div className="Project_Wrpr">
-      <SpaceStrz numberofstars={50} Prim="About" Sec='Me'/>
-      <WorkScase flexD='row-reverse' id='WSCASE1' W1={W1} W2={W2} W3={W3} W4={W4} W5={W5} W6={W6} W7={W7} W8={W8} W9={W9}/>
-    </div>
-  </>
-  )
+      <div className="Abt_Wrpr">
+        <SpaceStrz numberofstars={5} Prim="About" Sec="Me" />
+        <div className="Abt_Main">
+          <div className="Abt_Mn_Sec1">
+       
+            <div className="TimelineContainer">
+              <div className="TimeLineSegment Timeline ">
+                <div style={{width:'50%'}}>
+                  <h4>Intro</h4>
+                  <p>Hello there, I'm Muhammad Muttaqeen, a 23-year-old Muslim with a fervent passion for Web Application Development. My enthusiasm lies in the art of crafting distinctive websites that not only captivate but also stand out from the rest. Join me on a journey where creativity meets functionality, and together, we can bring unique digital experiences to life.</p>
+                </div>
+                <div style={{width:'50%'}}>HmmAnim</div>
+              </div>
+              <div className="TimeLineSegment Timeline">
+                <div style={{width:'50%'}}>
+                  <h4>Qualifications</h4>
+                  <p>Hi 2 Content</p>
+                </div>
+                <div style={{width:'50%'}}>HmmAnim</div>
+              </div>
+              <div className="TimeLineSegment Timeline">
+                <div style={{width:'50%'}}>
+                  <h4>Hi 3</h4>
+                  <p>Hi 3 Content</p> 
+                </div>
+                <div style={{width:'50%'}}>HmmAnim</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
