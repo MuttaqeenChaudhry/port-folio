@@ -90,7 +90,7 @@ export default function AbtMn() {
             <div className="TimelineContainer">
               <div id='TlSegment1' className="TimeLineSegment">
                 <div className="Timeline">
-                  <h4 style={{color: '#1F305E'}} className="f-sec">Introduction</h4>
+                  <h4 style={{color: '#007791'}} className="f-sec">Introduction</h4>
                   <p className="f-ub">
                     Hello there, I'm Muhammad Muttaqeen, a 23-year-old Muslim
                     with a fervent passion for Web Application Development. My
@@ -106,7 +106,7 @@ export default function AbtMn() {
                 </div>
               </div>
               <div id='TlSegment2' className="TimeLineSegment">
-                <div className='Timeline'>
+                <div className='Timeline2'>
                   <h4 style={{color: '#0076CE'}} className="f-sec">Qualifications</h4>
                   <p className="f-ub">
                     I completed my Matriculation with a focus on Computer
@@ -127,7 +127,7 @@ export default function AbtMn() {
                 </div>
               </div>
               <div id='TlSegment3' className="TimeLineSegment">
-                <div className='Timeline'>
+                <div className='Timeline3'>
                   <h4 className="c-prim f-sec">Experience</h4>
                   <p className="f-ub">
                     I began my web development journey with my Final Year

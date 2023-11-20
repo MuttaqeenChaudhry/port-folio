@@ -48,7 +48,7 @@
     height: 100%;
     border-style: solid;
     border-width: 0px 0px 0px 2px;
-    border-color: #1F305E;
+    border-color: #007791;
     animation: fadeIn 3s;
 
 }
@@ -88,9 +88,12 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #1F305E;
+    background: #007791;
 }
-
+.Timeline2 {
+    padding-left: 50px;
+    width: 100%;
+}
 .Timeline2::before {
     content: '';
     position: absolute;
@@ -101,6 +104,11 @@
     height: 10px;
     border-radius: 50%;
     background: #0076CE;
+}
+
+.Timeline3 {
+    padding-left: 50px;
+    width: 100%;
 }
 
 .Timeline3::before {
