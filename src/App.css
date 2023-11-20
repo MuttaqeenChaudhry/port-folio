@@ -18,6 +18,14 @@
   
 }
 
+@keyframes fadeInBorder {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: yellow;
+  }
+} 
 @keyframes shadowToggleb {
   0% {
     box-shadow: 0px 0px 25px #fff; 
