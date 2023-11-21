@@ -1,6 +1,7 @@
 .ContactMnWrpr {
     width: 100%;
     height: fit-content;
+    padding-bottom: 30px;
 }
 
 .ContactMain {
@@ -12,13 +13,22 @@
 .ContactCntnt {
     display: flex;
     flex-direction: row-reverse;
-    width: 95%;
+    width: 90%;
     margin: auto;
-   
+}
+
+.CntctSec1 {
+    width: 50%;
+    padding: 5px;
+}
+
+.CntctSec2 {
+    width: 50%;
+    padding: 5px;
 }
 
 fieldset {
-    border: 1px solid #fff;
+    border: 1px solid #61dafb;
     border-radius: 6px;
 }
 
@@ -34,13 +44,12 @@ label {
     display: block;
     width: fit-content;
     margin: auto;
-   font-size: 15px;
-   padding-top: 5px;
-  
+    font-size: 15px;
+    padding-top: 5px;
+
 }
 
 input {
-    text-align: center;
     display: block;
     font-family: Ubuntu;
     margin: 5px auto;
@@ -58,10 +67,10 @@ input:focus {
     border: 1px solid #61dafb;
 }
 
-input::placeholder{
+input::placeholder {
     position: absolute;
-     color: red;
-    margin-left: 50px;
+    color: red;
+    transform: translateX(15px);
 }
 
 textarea {
@@ -72,6 +81,7 @@ textarea {
     border-radius: 6px;
     caret-color: #61dafb;
     color: #61dafb;
+    font-family: 'Ubuntu';
     background-color: #0f0f0f;
 }
 
@@ -91,3 +101,19 @@ textarea:focus {
     border: 2px solid #61dafb;
 }
 
+
+@media (max-width: 768px) {
+
+    .ContactCntnt {
+        flex-direction: column-reverse;
+    }
+
+    .CntctSec1 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .CntctSec2 {
+        margin: auto;
+    }
+}
