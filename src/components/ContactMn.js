@@ -1,9 +1,18 @@
-import React from 'react';
-import '../stylesheets/ContactMn.css'
-import SpaceStrz from './SpaceStrz'
+import React, { useEffect } from 'react';
+import '../stylesheets/ContactMn.css';
+import SpaceStrz from './SpaceStrz';
+import Robot from '../animations/Robo.json'
+import Lottie from 'lottie-web';
 
 
 export default function ContactMn() {
+  let FmAnim = React.createRef();
+  useEffect(()=>{
+    Lottie.loadAnimation({
+      container : FmAnim.current,
+      animationData : Robot,
+    })
+  },[])
   return (
     <>
     <div className="ContactMnWrpr">
@@ -22,13 +31,13 @@ export default function ContactMn() {
               <input placeholder='*' type="email" name="" id="" required/><br/>
               <label className='c-prim f-sec' htmlFor="">Your Message:</label><br/>
               <textarea rows='5' cols='100%' style={{resize:'none'}}></textarea><br/>
-              <input className='c-prim f-sec' type="submit" value="Submit" />
+              <input className='c-prim f-sec hveffect' type="submit" value="Submit" />
               </fieldset>
             </form>
 
           </div>
-          <div>
-
+          <div style={{width:'50%', padding:'5px'}}>
+          <div ref={FmAnim} />
           </div>
         </div>
 
