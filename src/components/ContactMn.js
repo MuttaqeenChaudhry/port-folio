@@ -27,7 +27,7 @@ export default function ContactMn() {
     });
     setTimeout(() => {
       setConfetti('none');
-    }, 2000);
+    }, 4000);
    
   }
   return (
