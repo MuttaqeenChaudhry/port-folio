@@ -31,7 +31,24 @@
     font-family: Zeyada;
 }
 
-.Footer li {
-    font-family: Roboto;
+.Footer a {
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    font-weight: none;
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 1s ease-in-out;
 }
 
+.Footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #61dafb;
+}
+
+@media (max-width: 768px) {
+    
+    .Footer a {
+        font-size: 8px;
+    }
+    
+}

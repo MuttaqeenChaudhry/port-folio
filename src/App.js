@@ -7,6 +7,7 @@ import ProjecstMn from "./components/ProjectsMn";
 import AbtMn from "./components/AbtMn";
 import ContactMn from "./components/ContactMn";
 import { Routes, Route } from "react-router-dom";
+import { LgtCntxtProvider} from './components/LightContext';
 import RedirectArrow from "./components/RedirectArrow";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAnglesUp, faStar } from "@fortawesome/free-solid-svg-icons";
@@ -22,8 +23,9 @@ function App() {
   };
   return (
     <>
+      <LgtCntxtProvider value={handleClick}>
       <NavBar />
-      <RedirectArrow onClick={handleClick} />
+      <RedirectArrow/>
       <Routes>
         <Route path="/" element={[<IntroCmp />, <StakHse />]} />
         <Route path="/Projects" element={<ProjecstMn />} />
@@ -31,6 +33,7 @@ function App() {
         <Route path="/Contact" element={<ContactMn />} />
       </Routes>
       <Footer />
+      </LgtCntxtProvider>
     </>
   );
 }

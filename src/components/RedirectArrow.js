@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../stylesheets/RocketArrow.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import LightContext from "./LightContext";
 
 export default function RedirectArrow(props) {
+  const JumpTotop = useContext(LightContext);
   useEffect(() => {
     const ArrowContainer = document.getElementById('Rocket_Wrpr');
     const handleScroll = () => {
@@ -33,7 +35,7 @@ export default function RedirectArrow(props) {
         id="Rocket_Wrpr"
         style={{display : 'none'}}
       >
-        <div onClick={props.onClick} className="RocketContainer" id='ArrowContainer'>
+        <div onClick={JumpTotop} className="RocketContainer" id='ArrowContainer'>
           <span>
             <FontAwesomeIcon icon={faAnglesUp} color="#fff" size="2x" />
           </span>

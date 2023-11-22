@@ -18,17 +18,40 @@ export default function ContactMn() {
     })
   },[])
 
-  const SendInfo = (e) => {
-    e.preventDefault();
+  function LoadConfetti() {
+    const ConfetiCntnr = document.querySelector('#ConfetiCntnr');
+    ConfetiCntnr.classList.remove('imgFadeo');
     setConfetti('block');
     Lottie.loadAnimation({
+      name: confetti,
       container: ConfettiCnt.current,
-      animationData : Confetti
+      animationData : Confetti,
     });
+    if(window.innerWidth < 1200)
+   { 
     setTimeout(() => {
+      ConfetiCntnr.classList.add('imgFadeo')
+    }, 6000);
+    setTimeout(() => {
+      Lottie.destroy(confetti);
       setConfetti('none');
-    }, 4000);
-   
+    }, 7000);
+  }
+    else 
+    {
+       setTimeout(() => {
+      ConfetiCntnr.classList.add('imgFadeo')
+    }, 2000);
+    setTimeout(() => {
+      Lottie.destroy(confetti);
+      setConfetti('none');
+    }, 3000);
+  }
+  }
+
+  const SendInfo = (e) => {
+    e.preventDefault();
+    LoadConfetti();
   }
   return (
     <>
@@ -61,7 +84,7 @@ export default function ContactMn() {
           <div ref={FmAnim} />
           </div>
         </div>
-        <div className="ConfettiContainer" style={{display: confetti }}>
+        <div className="ConfettiContainer" id='ConfetiCntnr' style={{display: confetti }}>
          <div className='ConfetiDimen' ref={ConfettiCnt}/> 
         </div>
 
