@@ -10,28 +10,28 @@ export default function Footer() {
         </div>
         <div className="Footer">
           <div>
-            <h3>ITEM #</h3>
+            <h3>Home</h3>
             <ul>
               <li>Li</li>
               <li>Li2</li>
             </ul>
           </div>
           <div>
-            <h3>ITEM #</h3>
+            <h3>Projects</h3>
             <ul>
               <li>Li</li>
               <li>Li2</li>
             </ul>
           </div>
           <div>
-            <h3>ITEM #</h3>
+            <h3>About</h3>
             <ul>
               <li>Li</li>
               <li>Li2</li>
             </ul>
           </div>
           <div>
-            <h3>ITEM #</h3>
+            <h3>Contact</h3>
             <ul>
               <li>Li</li>
               <li>Li2</li>

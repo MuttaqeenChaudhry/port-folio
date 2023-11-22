@@ -22,9 +22,16 @@
 }
 
 .Footer {
-    color: #fff;
-    background-color: #0f0f0f;;
+    background-color: #fff;;
     display: flex;
     justify-content: space-around;
+}
+
+.Footer h3 {
+    font-family: Zeyada;
+}
+
+.Footer li {
+    font-family: Roboto;
 }
 

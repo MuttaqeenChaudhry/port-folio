@@ -1,18 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../stylesheets/ContactMn.css';
 import SpaceStrz from './SpaceStrz';
 import Robot from '../animations/Robo.json'
 import Lottie from 'lottie-web';
+import Confetti from '../animations/Confetti.json'
 
 
 export default function ContactMn() {
+  const[confetti, setConfetti] = useState('none');
   let FmAnim = React.createRef();
+  let ConfettiCnt = React.createRef(null);
+
   useEffect(()=>{
     Lottie.loadAnimation({
       container : FmAnim.current,
       animationData : Robot,
     })
   },[])
+
+  const SendInfo = (e) => {
+    e.preventDefault();
+    setConfetti('block');
+    Lottie.loadAnimation({
+      container: ConfettiCnt.current,
+      animationData : Confetti
+    });
+    setTimeout(() => {
+      setConfetti('none');
+    }, 2000);
+   
+  }
   return (
     <>
     <div className="ContactMnWrpr">
@@ -20,7 +37,7 @@ export default function ContactMn() {
       <div className="ContactMain">
         <div className='ContactCntnt'>
           <div className='CntctSec1'>
-            <form action="">
+            <form onSubmit={SendInfo}>
               <fieldset>
               <legend>Fill out the form</legend>
               <label className='c-prim f-sec' htmlFor="Data1">Subject</label><br/>
@@ -35,7 +52,7 @@ export default function ContactMn() {
               </span>
               <label className='c-prim f-sec' htmlFor="">Your Message:</label><br/>
               <textarea rows='5' cols='100%' style={{resize:'none'}}></textarea><br/>
-              <input className='c-prim f-sec hveffect' type="submit" value="Submit" />
+              <input className='c-prim f-sec hveffect' type="submit" value="Submit"/>
               </fieldset>
             </form>
 
@@ -43,6 +60,9 @@ export default function ContactMn() {
           <div className='CntctSec2'>
           <div ref={FmAnim} />
           </div>
+        </div>
+        <div className="ConfettiContainer" style={{display: confetti }}>
+         <div className='ConfetiDimen' ref={ConfettiCnt}/> 
         </div>
 
       </div>
