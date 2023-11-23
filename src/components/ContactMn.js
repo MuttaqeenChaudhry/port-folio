@@ -27,27 +27,13 @@ export default function ContactMn() {
       container: ConfettiCnt.current,
       animationData : Confetti,
     });
-    if(window.innerWidth < 1200)
-   { 
     setTimeout(() => {
       ConfetiCntnr.classList.add('imgFadeo')
-    }, 6000);
-    setTimeout(() => {
-      Lottie.destroy(confetti);
-      setConfetti('none');
     }, 7000);
-  }
-    else 
-    {
-       setTimeout(() => {
-      ConfetiCntnr.classList.add('imgFadeo')
-    }, 2000);
     setTimeout(() => {
       Lottie.destroy(confetti);
       setConfetti('none');
-    }, 3000);
-  }
-  }
+    }, 8000);}
 
   const SendInfo = (e) => {
     e.preventDefault();
