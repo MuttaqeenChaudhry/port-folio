@@ -118,7 +118,21 @@ textarea:focus {
 }
 
 @media (max-width: 1200px) {
+    .CntctSec1 {
+        width: 50%;
+    }
     
+    .CntctSec2 {
+        width: 30%;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 13px;
+    }
 }
 
 

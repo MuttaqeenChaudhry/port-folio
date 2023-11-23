@@ -35,9 +35,30 @@ export default function ContactMn() {
       setConfetti('none');
     }, 8000);}
 
+  function cleanUp() {
+    const SubJect = document.querySelector('#SubJect');
+    const naMe = document.querySelector('#naMe');
+    const EmAil = document.querySelector('#EmAil');
+    const CommenT = document.querySelector('#CommenT');
+    const FormMessage = document.querySelector('#FormMessage');
+    SubJect.value = null;
+    naMe.value = null;
+    EmAil.value = null;
+    CommenT.value = null;
+    FormMessage.classList.remove('imgFadeo');
+    FormMessage.innerHTML = '<h3>Submitted</h3>';
+    setTimeout(() => {
+    FormMessage.classList.add('imgFadeo');  
+    }, 3000);
+    setTimeout(() => {
+    FormMessage.innerHTML = '';
+    }, 4000);
+  } 
+
   const SendInfo = (e) => {
     e.preventDefault();
     LoadConfetti();
+    cleanUp();
   }
   return (
     <>
@@ -51,19 +72,21 @@ export default function ContactMn() {
               <legend>Fill out the form</legend>
               <label className='c-prim f-sec' htmlFor="Data1">Subject</label><br/>
               <span  style={{position:'relative'}}>
-              <input placeholder='*' type="text" id='Data1' required /><br/>
+              <input placeholder='*' type="text" id='SubJect' required /><br/>
               </span>
               <label className='c-prim f-sec'>Name</label><br/>
-              <input type="text" name="" id="" /><br/>
+              <input type="text" name="" id="naMe" /><br/>
               <label className='c-prim f-sec'>Email</label><br/>
               <span style={{position:'relative'}}>
-              <input placeholder='*' type="email" name="" id="" required/><br/>
+              <input placeholder='*' type="email" name="" id="EmAil" required/><br/>
               </span>
               <label className='c-prim f-sec' htmlFor="">Your Message:</label><br/>
-              <textarea rows='5' cols='100%' style={{resize:'none'}}></textarea><br/>
+              <textarea rows='5' cols='100%' id='CommenT' style={{resize:'none'}}></textarea><br/>
               <input className='c-prim f-sec hveffect' type="submit" value="Submit"/>
+              <span id='FormMessage' className='f-sec' style={{color:'#00FF00 ', height:'55px', fontSize:'14px', width:'fit-content', display:'block', margin:'auto'}}></span>
               </fieldset>
             </form>
+            
 
           </div>
           <div className='CntctSec2'>
