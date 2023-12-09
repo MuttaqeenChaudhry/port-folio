@@ -112,11 +112,10 @@ export default function AbtMn() {
                     I completed my Matriculation with a focus on Computer
                     Science, laying the foundation for my academic journey.
                     Building upon these fundamentals, I pursued my Higher
-                    Secondary School Certificate (HSSC) in Computer Science at
-                    ABHC College, where I deepened my understanding of the
+                    Secondary School Certificate (HSSC) in Computer Science, through which I deepened my understanding of the
                     field. Driven by a passion for software engineering, I
                     further honed my skills by enrolling in the Bachelor of
-                    Science program in Software Engineering at UET Taxila. This
+                    Science program in Software Engineering. This
                     advanced course equipped me with comprehensive knowledge and
                     practical experience, providing a robust framework for my
                     future endeavors in the dynamic world of technology .
@@ -136,7 +135,7 @@ export default function AbtMn() {
                     FYP laid the foundation for web development fundamentals.
                     Subsequently, I embraced React.js, creating multiple
                     applications to refine my UI development skills. In my
-                    recent role at Eidcaroose as a Full Stack Web Developer, I
+                    recent role as a Full Stack Web Developer, I
                     contributed to diverse projects, gaining comprehensive
                     experience across the entire development stack.
                     Collaborating with a skilled team, I worked on scalable web

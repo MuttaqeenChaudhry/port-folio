@@ -8,7 +8,7 @@ import Confetti from '../animations/Confetti.json'
 
 export default function ContactMn() {
   const[confetti, setConfetti] = useState('none');
-  let FmAnim = React.createRef();
+  let FmAnim = React.createRef(null);
   let ConfettiCnt = React.createRef(null);
 
   useEffect(()=>{
