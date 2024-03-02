@@ -63,10 +63,10 @@ export default function WorkScase(props) {
                     <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - JSON Animations</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - Data Validation</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>5 - Data Validation</li>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - React UI Libraries</li>
+                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>6 - React UI Libraries</li>
                     </ScrollAnimation>
                 </ul>
             </div>
