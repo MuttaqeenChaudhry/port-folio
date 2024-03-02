@@ -5,6 +5,16 @@ import WorkScase from "./WorkScase";
 import WorkScase2 from "./WorkScase2";
 import WorkScase3 from "./WorkScase3";
 import WorkScase4 from "./WorkScase4";
+import WorkScase5 from "./WorkScase5";
+import EC1 from '../assets/images/1.png'
+import EC2 from '../assets/images/2.png'
+import EC3 from '../assets/images/3.png'
+import EC4 from '../assets/images/4.png'
+import EC5 from '../assets/images/5.png'
+import EC6 from '../assets/images/6.png'
+import EC7 from '../assets/images/7.png'
+import EC8 from '../assets/images/8.png'
+import EC9 from '../assets/images/1.png'
 import W1 from '../assets/images/W1.jpg'
 import W2 from '../assets/images/W2.jpg'
 import W3 from '../assets/images/W3.jpg'
@@ -52,6 +62,7 @@ export default function ProjectsMn() {
     <>
       <div className="Project_Wrpr">
         <SpaceStrz numberofstars={5} Prim="Work" Sec='Folio'/>
+        <WorkScase5 W1={EC1} W2={EC2} W3={EC3} W4={EC4} W5={EC5} W6={EC6} W7={EC7} W8={EC8} W9={EC9}/>
         <WorkScase  W1={W1} W2={W2} W3={W3} W4={W4} W5={W5} W6={W6} W7={W7} W8={W8} W9={W9}/>      
         <WorkScase2 W1={NA1} W2={NA2} W3={NA3} W4={NA4} W5={NA5} W6={NA6} W7={NA7} W8={NA8} W9={NA9}/>    
         <WorkScase3 W1={EE1} W2={EE2} W3={EE3} W4={EE4} W5={EE5} W6={EE6} W7={EE7} W8={EE8} W9={EE9}/>    
