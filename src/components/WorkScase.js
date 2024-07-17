@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../stylesheets/WorkScase.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong, faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import ScrollAnimation from 'react-animate-on-scroll';
+import AnimatedPts from './AnimatedPts';
 
 export default function WorkScase(props) {
     const AR_R = <FontAwesomeIcon icon={faRightLong} size='3x' color="#fff" />;
@@ -47,29 +47,14 @@ export default function WorkScase(props) {
     <>
     <div className="WScase_Wrpr">
         <div className="WScase">
-            <div className='WScase_A'>
-                <h2 className='f-ub'>Traveler</h2>
-                <ul>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim' style={{color : "white"}}>1 -  App Landing Site</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>2 - MultiLingual</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>3 - Mail API</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>4 - JSON Animations</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>5 - Data Validation</li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp'>
-                    <li className='f-sec c-prim mt-5' style={{color : "white"}}>6 - React UI Libraries</li>
-                    </ScrollAnimation>
-                </ul>
-            </div>
+            <AnimatedPts
+            title='Traveler'
+            p1='App Info Site'
+            p2="MultiLingual"
+            p3='Email.js'
+            p4='JSON Animations'
+            p5='React UI Libraries'
+            />
             <div className='WScase_B'>
                 <div id='WScase_B_1' className='WScase_B_1'>
                 <img className='Sliding_Imgs' src={props.W1} alt="1" />

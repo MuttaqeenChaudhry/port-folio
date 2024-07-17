@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "../stylesheets/WorkScase.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong, faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import ScrollAnimation from "react-animate-on-scroll";
+import AnimatedPts from "./AnimatedPts";
+
 
 export default function WorkScase(props) {
   const AR_R = <FontAwesomeIcon icon={faRightLong} size="3x" color="#fff" />;
@@ -43,45 +43,14 @@ export default function WorkScase(props) {
     <>
       <div className="WScase_Wrpr">
         <div className="WScase" style={{ flexDirection: props.flexD }}>
-          <div className="WScase_A">
-            <h2 style={{ fontSize: "5vmin", color: "white" }} className="f-ub">
-              ATT
-            </h2>
-            <ul>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim" style={{ color: "white" }}>
-                  1 - Timtables Automation
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  2 - Faculty Portals
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  3 - Live Timetables
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  4 - PHP, SQL{" "}
-                </li>
-              </ScrollAnimation>
-            </ul>
-          </div>
+          <AnimatedPts
+              title='ATTabler'
+              p1='Autonomous'
+              p2="Faculty Portals"
+              p3='Live Timetables'
+              p4='PHP, SQL'
+              p5='Vanilla Css, BStrap'
+            />
           <div className="WScase_B">
             <div id="WScase_B_14" className="WScase_B_1">
               <img className="Sliding_Imgs" src={props.W1} alt="1" />
