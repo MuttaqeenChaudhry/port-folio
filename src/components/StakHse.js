@@ -5,7 +5,7 @@ import "animate.css";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faM, faE, faR, faN, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import lottie from "lottie-web";
 import Astro2 from "../animations/Astro2.json";
@@ -13,10 +13,6 @@ import Astro3 from "../animations/Asto3.json";
 import Astro4 from "../animations/Astro5.json";
 
 export default function StakHse() {
-  const LG_M = <FontAwesomeIcon icon={faM} color="#fff" />;
-  const LG_E = <FontAwesomeIcon icon={faE} color="#fff" />;
-  const LG_R = <FontAwesomeIcon icon={faR} color="#fff" />;
-  const LG_N = <FontAwesomeIcon icon={faN} color="#fff" />;
   let AnimCntnr5 = React.createRef();
   let AnimCntnr6 = React.createRef();
   let AnimCntnr7 = React.createRef();
@@ -55,28 +51,28 @@ export default function StakHse() {
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
                 >
-                  <li className="Sklls_bfr">{LG_M} MongoDB</li>
+                  <li className="Sklls_bfr">&nbsp; React.js, Next.js</li>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
                   delay={500}
                 >
-                  <li className="Sklls_bfr">{LG_E} Express.js</li>
+                  <li className="Sklls_bfr">&nbsp; Van, Tailwind, Scss</li>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
                   delay={1000}
                 >
-                  <li className="Sklls_bfr">{LG_R} React.js</li>
+                  <li className="Sklls_bfr">&nbsp; Express.js</li>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
                   delay={1500}
                 >
-                  <li className="Sklls_bfr">{LG_N} Node.js</li>
+                  <li className="Sklls_bfr">&nbsp; MongoDb, FireBase</li>
                 </ScrollAnimation>
               </ul>
             </div>
