@@ -20,9 +20,9 @@ export default function NavBar() {
       const Nav_Right = document.querySelector('#Nav_Right');
       const Nav_Left = document.querySelector('#Nav_Left');
       if (window.scrollY > 100) {
-          Nav_Wrpr.classList.add("anim_d_down");
-         Nav_Wrpr.style.height = '10vmin ';
-         Nav_Wrpr.style.position = 'fixed';
+        Nav_Wrpr.classList.add("anim_d_down");
+        Nav_Wrpr.style.height = '10vmin ';
+        Nav_Wrpr.style.position = 'fixed';
         Nav_Wrpr.style.backgroundColor = 'transparent ';
         Nav_Left.style.width = '100%';
         Nav_Left.style.height = '100%';
@@ -30,7 +30,8 @@ export default function NavBar() {
         Nav_Right.style.display = 'none';
         Nav_Left.classList.add('TxtAnim')
         MainTitle.style.fontSize = '6vmin';
-        MainTitle.style.color = '#61dafb';  } 
+        MainTitle.style.color = '#61dafb';
+      } 
       else if(window.scrollY < 100) {
         Nav_Wrpr.style.position = 'static';
         Nav_Wrpr.classList.remove("anim_d_down");
@@ -55,7 +56,7 @@ export default function NavBar() {
                 <div className="Nav-Left" id="Nav_Left">
                   <div>
                   <a className="Main_Title" href="" rel="noreferrer noopener" id="MainTitle">
-                  @muttaqeen_231
+                  @im_muttaqeen
                 </a>
                 </div>
                 <div style={{overflow:'hidden'}}>

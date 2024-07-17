@@ -11,9 +11,9 @@ export default function WorkScase(props) {
   const AR_L = <FontAwesomeIcon icon={faLeftLong} size="3x" color="#fff" />;
 
   useEffect(() => {
-    const prevButton = document.getElementById("prevButton5");
-    const nextButton = document.getElementById("nextButton5");
-    const ImgContainer = document.getElementById("WScase_B_15");
+    const prevButton = document.getElementById("prevButton6");
+    const nextButton = document.getElementById("nextButton6");
+    const ImgContainer = document.getElementById("WScase_B_16");
     const Imgs = ImgContainer.querySelectorAll(".Sliding_Imgs");
     let InitIndex = 0;
     const showImage = (index) => {
@@ -44,16 +44,16 @@ export default function WorkScase(props) {
     <>
       <div className="WScase_Wrpr">
         <div className="WScase" style={{ flexDirection: props.flexD }}>
-        <AnimatedPts
-           title='Eidcarosse'
-           p1='E-comm website'
-           p2="JWT's Authentication"
+          <AnimatedPts
+           title='GratisOglasi'
+           p1='C2C E-comm site'
+           p2='JWT/Local Storage Auth'
            p3='Post, Edit, Filter Ads'
-           p4='Live Chat (Firebase)'
-           p5='Next.js, Mongo, TypeScript'
+           p4='Realtime Firebase Chat'
+           p5='Next.js, Express, Mongo'
            />
           <div className="WScase_B">
-            <div id="WScase_B_15" className="WScase_B_1">
+            <div id="WScase_B_16" className="WScase_B_1">
               <img className="Sliding_Imgs" src={props.W1} alt="1" />
               <img className="Sliding_Imgs" src={props.W2} alt="2" />
               <img className="Sliding_Imgs" src={props.W3} alt="3" />
@@ -65,10 +65,10 @@ export default function WorkScase(props) {
               <img className="Sliding_Imgs" src={props.W9} alt="9" />
             </div>
             <div className="WScase_B_2">
-              <button className="btn_rnd" id="prevButton5">
+              <button className="btn_rnd" id="prevButton6">
                 {AR_L}
               </button>
-              <button className="btn_rnd" id="nextButton5">
+              <button className="btn_rnd" id="nextButton6">
                 {AR_R}
               </button>
             </div>
