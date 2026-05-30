@@ -2,52 +2,28 @@ import React from 'react';
 import ScrollAnimation from "react-animate-on-scroll";
 
 const AnimatedPts = (props) => {
+  const points = props.points || [props.p1, props.p2, props.p3, props.p4, props.p5];
+
   return (
     <div className="WScase_A">
             <h2 style={{ fontSize: "5vmin", color: "white" }} className="f-ub">
               {props.title}
             </h2>
             <ul>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim" style={{ color: "white" }}>
-                  1 - {props.p1}
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  2 - {props.p2}
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  3 - {props.p3}
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  4 - {props.p4}
-                </li>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutUp"
-              >
-                <li className="f-sec c-prim mt-5" style={{ color: "white" }}>
-                  5 - {props.p5}
-                </li>
-              </ScrollAnimation>
+              {points.map((point, index) => (
+                <ScrollAnimation
+                  key={`${props.title}-${point}`}
+                  animateIn="animate__fadeInUp"
+                  animateOut="animate__fadeOutUp"
+                >
+                  <li
+                    className={`f-sec c-prim${index === 0 ? "" : " mt-5"}`}
+                    style={{ color: "white" }}
+                  >
+                    {index + 1} - {point}
+                  </li>
+                </ScrollAnimation>
+              ))}
             </ul>
           </div>
   )

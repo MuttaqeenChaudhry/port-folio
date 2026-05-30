@@ -12,6 +12,21 @@ import Astro2 from "../animations/Astro2.json";
 import Astro3 from "../animations/Asto3.json";
 import Astro4 from "../animations/Astro5.json";
 
+const skills = [
+  "React.js, Next.js",
+  "Vue.js",
+  "Java",
+  "Python",
+  "PostgreSQL",
+  "MongoDB, Firebase",
+  "Express.js",
+  "Docker",
+  "GitHub",
+  "Agile Experience",
+  "Web Hosting",
+  "Tailwind, SCSS",
+];
+
 export default function StakHse() {
   let AnimCntnr5 = React.createRef();
   let AnimCntnr6 = React.createRef();
@@ -45,35 +60,18 @@ export default function StakHse() {
           <div id="M_div2" className="div2">
             <div ref={AnimCntnr6} className="div2_lft"></div>
             <div className="div2_rgt">
-              <h3>I Work with,</h3>
+              <h3>Skillset</h3>
               <ul>
-                <ScrollAnimation
-                  animateIn="animate__fadeInRight"
-                  animateOnce={true}
-                >
-                  <li className="Sklls_bfr">&nbsp; React.js, Next.js</li>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="animate__fadeInRight"
-                  animateOnce={true}
-                  delay={500}
-                >
-                  <li className="Sklls_bfr">&nbsp; Van, Tailwind, Scss</li>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="animate__fadeInRight"
-                  animateOnce={true}
-                  delay={1000}
-                >
-                  <li className="Sklls_bfr">&nbsp; Express.js</li>
-                </ScrollAnimation>
-                <ScrollAnimation
-                  animateIn="animate__fadeInRight"
-                  animateOnce={true}
-                  delay={1500}
-                >
-                  <li className="Sklls_bfr">&nbsp; MongoDb, FireBase</li>
-                </ScrollAnimation>
+                {skills.map((skill, index) => (
+                  <ScrollAnimation
+                    key={skill}
+                    animateIn="animate__fadeInRight"
+                    animateOnce={true}
+                    delay={index * 150}
+                  >
+                    <li className="Sklls_bfr">&nbsp; {skill}</li>
+                  </ScrollAnimation>
+                ))}
               </ul>
             </div>
           </div>

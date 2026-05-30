@@ -1,12 +1,7 @@
 import React from "react";
 import "../stylesheets/ProjectsMn.css";
 import SpaceStrz from "./SpaceStrz";
-import WorkScase from "./WorkScase";
-import WorkScase2 from "./WorkScase2";
-import WorkScase3 from "./WorkScase3";
-import WorkScase4 from "./WorkScase4";
-import WorkScase5 from "./WorkScase5";
-import WorkScase6 from "./WorkScase6";
+import ProjectShowcase from "./ProjectShowcase";
 import EC1 from '../assets/images/1.png'
 import EC2 from '../assets/images/2.png'
 import EC3 from '../assets/images/3.png'
@@ -60,8 +55,139 @@ import GG5 from '../assets/images/Gratis/5.png'
 import GG6 from '../assets/images/Gratis/6.png'
 import GG7 from '../assets/images/Gratis/7.png'
 import GG8 from '../assets/images/Gratis/8.png'
+import AF0 from '../assets/images/af0.png'
+import AF1 from '../assets/images/af1.png'
+import AF2 from '../assets/images/af2.png'
+import AF3 from '../assets/images/af3.png'
+import AF4 from '../assets/images/af4.png'
+import AF5 from '../assets/images/af5.png'
+import AF6 from '../assets/images/af6.png'
+import PY1 from '../assets/images/py1.png'
+import PY2 from '../assets/images/py2.png'
+import PY3 from '../assets/images/py3.png'
+import TP1 from '../assets/images/tp1.png'
+import TP2 from '../assets/images/tp2.png'
+import TP3 from '../assets/images/tp3.png'
+import TP4 from '../assets/images/tp4.png'
+import TP5 from '../assets/images/tp5.png'
+import TP6 from '../assets/images/tp6.png'
+import TP7 from '../assets/images/tp7.png'
+import TP8 from '../assets/images/tp8.png'
+import TP9 from '../assets/images/tp9.png'
+import TP10 from '../assets/images/tp10.png'
 
-
+const projects = [
+  {
+    title: "TogetherPrime",
+    points: [
+      "Vue.js Event Platform",
+      "Firebase Authentication",
+      "Google SSO",
+      "Search, Sort, Pagination",
+      "Google Maps and Places",
+      "AI Prompt Responses",
+    ],
+    images: [TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10],
+    interval: 4500,
+  },
+  {
+    title: "Python Adventure Game",
+    points: [
+      "OOP Concepts",
+      "CSV Data Loading",
+      "Container Inventory System",
+      "Input Validation",
+      "Menu Driven Gameplay",
+    ],
+    images: [PY1, PY2, PY3],
+    interval: 4100,
+  },
+  {
+    title: "AFL Simulation Game Java",
+    points: [
+      "Java Classes",
+      "OOP",
+      "File IO",
+      "Game State Management",
+      "Score Simulation Logic",
+      "Console Interaction",
+    ],
+    images: [AF0, AF1, AF2, AF3, AF4, AF5, AF6],
+    interval: 4300,
+  },
+  {
+    title: "GratisOglasi",
+    points: [
+      "C2C E-comm site",
+      "JWT/Local Storage Auth",
+      "Post, Edit, Filter Ads",
+      "Realtime Firebase Chat",
+      "Next.js, Express, Mongo",
+    ],
+    images: [GG1, GG2, GG3, GG4, GG5, GG6, GG7, GG8, GG4],
+    interval: 4800,
+  },
+  {
+    title: "Eidcarosse",
+    points: [
+      "E-comm website",
+      "JWT's Authentication",
+      "Post, Edit, Filter Ads",
+      "Live Chat (Firebase)",
+      "Next.js, Mongo, TypeScript",
+    ],
+    images: [EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9],
+    interval: 4800,
+  },
+  {
+    title: "Traveler",
+    points: [
+      "App Info Site",
+      "MultiLingual",
+      "Email.js",
+      "JSON Animations",
+      "React UI Libraries",
+    ],
+    images: [W1, W2, W3, W4, W5, W6, W7, W8, W9],
+    interval: 4200,
+  },
+  {
+    title: "NewsAven",
+    points: [
+      "News Information site",
+      "Dynamic Navigation",
+      "Pagination",
+      "Bootstrap",
+      "Js Libraries",
+    ],
+    images: [NA1, NA2, NA3, NA4, NA5, NA6, NA7, NA8, NA9],
+    interval: 4400,
+  },
+  {
+    title: "EditEase",
+    points: [
+      "Text Editor",
+      "Light/Dark Modes",
+      "Fully Responsive",
+      "Text -> Speech",
+      "Vanilla Css, BStrap",
+    ],
+    images: [EE1, EE2, EE3, EE4, EE5, EE6, EE7, EE8, EE9],
+    interval: 4600,
+  },
+  {
+    title: "ATTabler",
+    points: [
+      "Autonomous",
+      "Faculty Portals",
+      "Live Timetables",
+      "PHP, SQL",
+      "Vanilla Css, BStrap",
+    ],
+    images: [AT1, AT2, AT3, AT4, AT5, AT6, AT7, AT8, AT9],
+    interval: 4800,
+  },
+];
 
 
 
@@ -71,12 +197,9 @@ export default function ProjectsMn() {
     <>
       <div className="Project_Wrpr">
         <SpaceStrz numberofstars={5} Prim="Work" Sec='Folio'/>
-        <WorkScase6 W1={GG1} W2={GG2} W3={GG3} W4={GG4} W5={GG5} W6={GG6} W7={GG7} W8={GG8} W9={GG4}/>    
-        <WorkScase5 W1={EC1} W2={EC2} W3={EC3} W4={EC4} W5={EC5} W6={EC6} W7={EC7} W8={EC8} W9={EC9}/>
-        <WorkScase  W1={W1} W2={W2} W3={W3} W4={W4} W5={W5} W6={W6} W7={W7} W8={W8} W9={W9}/>      
-        <WorkScase2 W1={NA1} W2={NA2} W3={NA3} W4={NA4} W5={NA5} W6={NA6} W7={NA7} W8={NA8} W9={NA9}/>    
-        <WorkScase3 W1={EE1} W2={EE2} W3={EE3} W4={EE4} W5={EE5} W6={EE6} W7={EE7} W8={EE8} W9={EE9}/>    
-        <WorkScase4 W1={AT1} W2={AT2} W3={AT3} W4={AT4} W5={AT5} W6={AT6} W7={AT7} W8={AT8} W9={AT9}/>    
+        {projects.map((project) => (
+          <ProjectShowcase key={project.title} {...project} />
+        ))}
       </div>
     </>
   );
