@@ -92,7 +92,7 @@ export default function AbtMn() {
                 <div className="Timeline">
                   <h4 style={{color: '#007791'}} className="f-sec">Introduction</h4>
                   <p className="f-ub">
-                    Hello there, I'm Muhammad Muttaqeen, a 23-year-old Muslim
+                    Hello there, I'm Muhammad Muttaqeen, a 25-year-old Muslim
                     with a fervent passion for Web Application Development. My
                     enthusiasm lies in the art of crafting distinctive websites
                     that not only captivate but also stand out from the rest.
@@ -115,10 +115,7 @@ export default function AbtMn() {
                     Secondary School Certificate (HSSC) in Computer Science, through which I deepened my understanding of the
                     field. Driven by a passion for software engineering, I
                     further honed my skills by enrolling in the Bachelor of
-                    Science program in Software Engineering. This
-                    advanced course equipped me with comprehensive knowledge and
-                    practical experience, providing a robust framework for my
-                    future endeavors in the dynamic world of technology .
+                    Science program in Software Engineering. Advancing with the comprehensive knowledge, I started my Master's in Information Technology from Monash University, specializing in Software Engineering, to further enhance my expertise and contribute to the ever-evolving world of technologys.
                   </p>
                 </div>
                 <div style={{ width: "50%" }}>
@@ -129,18 +126,15 @@ export default function AbtMn() {
                 <div className='Timeline3'>
                   <h4 className="c-prim f-sec">Experience</h4>
                   <p className="f-ub">
-                    I began my web development journey with my Final Year
-                    Project (FYP), transitioning from prior experience in mobile
-                    development. Focused on HTML, CSS, JavaScript, and PHP, my
-                    FYP laid the foundation for web development fundamentals.
-                    Subsequently, I embraced React.js, creating multiple
+                    I began my web development journey with curiosity in the very basics of web development, developing a fundamental understanding of the core technologies, I embraced React.js, Next.js, Vue.js creating multiple
                     applications to refine my UI development skills. In my
-                    recent role as a Full Stack Web Developer, I
+                    previous professional role as a Full Stack Web Developer, I
                     contributed to diverse projects, gaining comprehensive
                     experience across the entire development stack.
-                    Collaborating with a skilled team, I worked on scalable web
-                    applications, solidifying my passion for innovative web
-                    solutions and continuous skill enhancement .
+                    During my Master's studies, I had
+                    the opportunity to upgrade my developement and programming skills in Java, Javascript,
+                    Python and Kotlin. I had experience working with non-relational databases like MongoDB and relational databases like MySQL. More recently I have developed
+                    projects in Agile environment using tools like Jira, Trello and GitHub. I am eager to continue expanding my expertise and contributing to innovative web development projects in the future.
                   </p>
                 </div>
                 <div style={{ width: "50%" }}>

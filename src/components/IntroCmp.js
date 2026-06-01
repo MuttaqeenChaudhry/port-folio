@@ -26,11 +26,11 @@ export default function IntroCmp() {
     });
   }, []);
 
-  const strings = ["Muttaqeen", "a Full Stack Web Dev"];
+  const strings = ["Muttaqeen", "a Developer :)", "a Programmer :)", "a Creator :)"];
   return (
     <>
       <div className="IntroCmp-Wrpr">
-        <div className="Section_One">
+       <div className="Section_One">
           <div ref={AnimCntnr} className="AnimCntnr" />
         </div>
         <div className="IntrCmp">

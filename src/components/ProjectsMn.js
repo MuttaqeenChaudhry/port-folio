@@ -75,8 +75,32 @@ import TP7 from '../assets/images/tp7.png'
 import TP8 from '../assets/images/tp8.png'
 import TP9 from '../assets/images/tp9.png'
 import TP10 from '../assets/images/tp10.png'
+import CR1 from '../assets/images/cr1.png'
+import CR2 from '../assets/images/cr2.png'
+import CR3 from '../assets/images/cr3.png'
+import CR4 from '../assets/images/cr4.png'
+import CR5 from '../assets/images/cr5.png'
+import CR6 from '../assets/images/cr6.png'
+import CR7 from '../assets/images/cr7.png'
+import CR8 from '../assets/images/cr8.png'
+import CR9 from '../assets/images/cr9.png'
 
 const projects = [
+  {
+    title: "Concovery",
+    points: [
+      "Concussion Recovery App",
+      "Vue.js + Tailwind UI",
+      "Express.js API",
+      "PostgreSQL Database",
+      "Mapbox Location Tools",
+      "Netlify Frontend Hosting",
+      "Northflank Backend Hosting",
+      "GitHub CI/CD Pipeline",
+    ],
+    images: [CR1, CR2, CR3, CR4, CR5, CR6, CR7, CR8, CR9],
+    interval: 4500,
+  },
   {
     title: "TogetherPrime",
     points: [
